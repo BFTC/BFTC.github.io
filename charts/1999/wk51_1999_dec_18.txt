@@ -1,0 +1,101 @@
+                    Wk 51 – 1999 Dec 18 – USA Top 100
+1     1   21   SMOOTH                        Santana
+2     2   17   BACK AT ONE                   Brian McKnight
+3     3   10   I WANNA LOVE YOU FOREVER      Jessica Simpson
+4     6    9   I KNEW I LOVED YOU            Savage Garden
+5     5   16   MY LOVE IS YOUR LOVE          Whitney Houston
+6     4   15   I NEED TO KNOW                Marc Anthony
+7     7   13   U KNOW WHAT'S UP              Donell Jones
+8     9   10   WAITING FOR TONIGHT           Jennifer Lopez
+9    13    4   HOT BOYZ                      Missy Elliott
+10   17    7   24-7                          Kevon Edmonds
+11   14    9   BRING IT ALL TO ME            Blaque
+12   11   19   STEAL MY SUNSHINE             Len
+13    8   17   MAMBO NO.5                    Lou Bega
+14   10    5   GIRL ON TV                    LFO
+15   12   26   UNPRETTY                      TLC
+16   19    8   THEN THE MORNING COMES        Smash Mouth
+17   15   34   WHERE MY GIRL'S AT            702
+18   28    5   WHAT A GIRL WANTS             Christina Aguilera
+19   16   13   SATISFY YOU                   Puff Daddy & R. Kelly
+20   18   18   GET GONE                      Ideal
+21   27    8   1-2-3                         Sole & JT Money
+22   24   11   MEET VIRGINIA                 Train
+23   20   25   SOMEDAY                       Sugar Ray
+24   22   24   BACK THAT THANG UP            Juvenile
+25   30   10   LEARN TO FLY                  Foo Fighters
+26   29   10   BIG DEAL                      LeAnn Rimes
+27   36   12   15 MINUTES                    Marc Nelson
+28   35    7   BREATHE                       Faith Hill
+29   67    2   BLUE                          Eiffel 65
+30   33    9   HE DIDN'T HAVE TO BE          Brad Paisley
+31   31   10   WHEN I SAID I DO              Clint Black
+32   54    2   HE CAN'T LOVE U               Jagged Edge
+33   42   24   BLACK BALLOON                 Goo Goo Dolls
+34   37    7   HANGIN' AROUND                Counting Crows
+35   44    6   THAT'S THE WAY IT IS          Celine Dion
+36   23   14   CRAZY                         Britney Spears
+37   40    9   GOT YOUR MONEY                Ol' Dirty Bastard
+38   43    9   GET IT ON TONIGHT             Montell Jordan
+39   39    5   SHAKE YOUR BON BON            Ricky Martin
+40   34   11   STAY THE NIGHT                IMX
+41   21   16   HEARTBREAKER                  Mariah Carey & Jay-Z
+42   41    7   IF YOU LOVE ME                Mint Conditon
+43   25    8   WILL 2K                       Will Smith
+44   47   27   SHE'S SO HIGH                 Tal Bachman
+45   32   25   GENIE IN A BOTTLE             Christina Aguilera
+46    -    1   DANCIN'                       Guy
+47   26   29   SCARTISSUE                    Red Hot Chlli Peppers
+48   58    5   GOT TO GET IT                 Sisqo & Make It Hot
+49   38   17   I LOVE YOU                    Martina McBride
+50   66    3   YOU CAN DO IT                 Ice Cube
+51   56    8   WHAT DO YOU SAY               Reba
+52   64    4   TAKE A PICTURE                Filter
+53   45   13   HOME TO YOU                   John Michael Montgomery
+54   54   46   DON'T SAY YOU LOVE ME         M2M
+55   55   14   ALL THINGS CONSIDERED         Yankee Gray
+ 56   48   20   I DO                                     98 Degrees
+ 57   63    6   POP A TOP                                Alan Jackson
+ 58   51   14   BLING BLING                              BG
+ 59   52   14   GOTTA MAN                                Eve
+ 60   57   15   HIGHER                                   Creed
+ 61   70    4   COWBOY TAKE ME AWAY                      Dixie Chicks
+ 62   69    5   ANGELS                                   Robbie Williams
+ 63   49   15   WE CAN'T BE FRIENDS                      Deborah Cox
+ 64   71    4   MY BEST FRIEND                           Tim McGraw
+ 65   53   14   LARGER THAN LIFE                         Backstreet Boys
+ 66   60   19   SOMETHING LIKE THAT                      Tim McGraw
+ 67   68    3   CAUGHT OUT THERE                         Kelis
+ 68   82    2   THANK GOD I'VE FOUND YOU                 Mariah Carey & 98 Degrees
+ 69   76    3   ALL THE SMALL THINGS                     Blink 182
+ 70   61    9   COME ON OVER                             Shania Twain
+ 71   65   13   BUG A BOO                                Destiny's Child
+ 72   62   14   I WANT IT ALL                            Warren G & Mack 10
+ 73   75    3   DEEP INSIDE                              Mary J. Blige & Elton John
+ 74   73   20   SHE'S ALL I EVER HAD                     Ricky Martin
+ 75   72   12   CHEMICALS BETWEEN US                     Bush
+ 76   79   19   SEXUAL                                   Amber
+ 77   93    2   LEFT AND RIGHT                           D'angelo & Method Man
+ 78   77    9   GIVEW YOU WHAT YOU WANT                  Chico DeBarge
+ 79   84    3   RHYTHM DIVINE                            Enrique Iglesias
+ 80   59   15   THERE SHE GOES                           Sixpence None The Richer
+ 81   81    5   SHE THINKS MY TRACTOR'S SEXY             Kenny Chesney
+ 82   90    2   NOTORIOUS B.I.G.                         Notorious B.I.G.
+ 83   77   22   WHAT DO YOU SAY TO THAT                  Fatboy Slim
+ 84   94    2   NONE OF UR FRIENDS BUSINESS              Ginuwine
+ 85   88    3   N 2 GETHER NOW                           Limp Bizkit & Method Man
+ 86   80   16   MUSIC OF MY HEART                        N' Sync & Gloria Estefan
+ 87   74    9   GREATEST ROMANCE EVER SOLD               Artist
+ 88   85   10   STEAM                                    Ty Herndon
+ 89    -    1   SMILE                                    Lonestar
+ 90   91    3   RE-ARRANGED                              Limp Bizkit
+ 91   87    8   GUERRILLA RADIO                          Rage Against The Machine
+ 92   89    3   THE BLOCK IS HOT                         Lil' Wayne & Juveniles
+ 93   92   10   DOLPHIN'S CRY                            Live
+ 94   95    3   LIVE LAUGH LOVE                          Clay Walker
+ 95   83   16   WHAT DO YOU WAY TO THAT                  George Strait
+ 96   86   17   IF I COULD TURN BACK THE HANDS OF TIME   R. Kelly
+ 97    -    1   CHRISTMAS SONG                           Christina Aguilera
+ 98   RE    3   STILL DRE                                Dr. Dre & Snoop Dogg
+ 99   98    4   L.A. SONG                                Beth Hart
+100   96    4   NASTRADAMUS                              Nas

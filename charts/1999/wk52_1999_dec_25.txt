@@ -1,0 +1,101 @@
+                    Wk 52 – 1999 Dec 25 – USA Top 100
+1    1    22   SMOOTH                        Santana
+2    2    18   BACK AT ONE                   Brian McKnight
+3    3    11   I WANNA LOVE YOU FOREVER      Jessica Simpson
+4    4    10   I KNEW I LOVED YOU            Savage Garden
+5    5    17   MY LOVE IS YOUR LOVE          Whitney Houston
+6    6    16   I NEED TO KNOW                Marc Anthony
+7    9    5    HOT BOYZ                      Missy Elliott
+8    7    14   U KNOW WHAT'S UP              Donell Jones
+9    11   10   BRING IT ALL TO ME            Blaque
+10   10   8    24-7                          Kevon Edmonds
+11   14   6    GIRL ON TV                    LFO
+12   8    11   WAITING FOR TONIGHT           Jennifer Lopez
+13   18   5    WHAT A GIRL WANTS             Christina Aguilera
+14   16   9    THEN THE MORNING COMES        Smash Mouth
+15   12   20   STEAL MY SUNSHINE             Len
+16   29   3    BLUE                          Eiffel 65
+17   32   3    HE CAN'T LOVE U               Jagged Edge
+18   13   18   MAMBO NO.5                    Lou Bega
+19   17   35   WHERE MY GIRL'S AT            702
+20   15   27   UNPRETTY                      TLC
+21   22   12   MEET VIRGINIA                 Train
+22   25   11   LEARN TO FLY                  Foo Fighters
+23   21   9    4-5-6                         Sole & JT Money
+24   38   10   GET IT ON TONITE              Montell Jordan
+25   24   25   BACK THAT THANG UP            Juvenile
+26   26   11   BIG DEAL                      LeAnn Rimes
+27   20   19   GET GONE                      Ideal
+28   28   8    BREATHE                       Faith Hill
+29   46   2    DANCIN'                       Guy
+30   34   7    THAT'S THE WAY IT IS          Celine Dion
+31   30   10   HE DIDN'T HAVE TO BE          Brad Paisley
+32   19   14   SATISFY YOU                   Puff Daddy & R. Kelly
+33   37   10   GOT YOUR MONEY                Ol' Dirty Bastard
+34   23   26   SOMEDAY                       Sugar Ray
+35   35   8    HANGIN' AROUND                Counting Crows
+36   40   12   STAY THE NIGHT                IMX
+37   33   25   BLACK BALLOON                 Goo Goo Dolls
+38   52   5    TAKE A PICTURE                Filter
+39   39   6    SHAKE YOUR BON BON            Ricky Martin
+40   42   8    IF YOU LOVE ME                Mint Condition
+41   31   11   WHEN I SAID I DO              Clint Black
+42   50   4    YOU CAN DO IT                 Ice Cube
+43   27   13   15 MINUTES                    Marc Nelson
+44   54   6    DON'T SAY YOU LOVE ME         M2M
+45   RE   21   AMAZED                        Lonestar
+46   51   9    WHAT DO YOU SAY               Reba
+47   97   2    CHRISTMAS SONG                Christin Aguilera
+48   48   6    GOT TO GET IT                 Sisqo & Make It Hot
+49   44   28   SHE'S SO HIGH                 Tal Bachman
+50   68   3    THANK GOD I FOUND YOU         Mariah Carey & 98 Degrees
+51   41   17   HEARTBREAKER                  Mariah Carey & Jay-Z
+52   62   5    COWBOY TAKE ME AWAY           Dixie Chicks
+53   36   15   CRAZY                         Britney Spears
+54   64   5    MY BEST FRIEND                Tim McGraw
+55   57   7    POP A TOP                     Alan Jackson
+ 56    62   6    ANGELS                         Robbie Williams
+ 57    55   15   ALL THINGS CONSIDERED          Yankee Grey
+ 58    43   9    WILL 2K                        Will Smith
+ 59    69   4    ALL THE SMALL THINGS           Blink 182
+ 60    49   18   I LOVE YOU                     Martina McBride
+ 61    60   16   HIGHER                         Creed
+ 62    58   15   BLING BLING                    BG
+ 63    67   4    CAUGHT OUT THERE               Kelis
+ 64    73   7    DEEP INSIDE                    Mary J. Blige & Elton John
+ 65    66   20   SOMETHING LIKE THAT            Tim McGraw
+ 66    59   15   GOTTA MAN                      Eve
+ 67    79   4    RHYTHM DIVINE                  Enrique Iglesias
+ 68    53   13   HOME TO YOU                    John Michael Montgomery
+ 69    76   20   SEXUAL                         Amber
+ 70    65   15   LARGER THAN LIFE               Backstreet Boys
+ 71    84   3    NONE OF UR FRIENDS BUSINESS    Ginuwine
+ 72    71   14   BUG A BOO                      Destiny’s Child
+ 73    75   13   CHEMICALS BETWEEN US           Bush
+ 74    81   6    SHE THINKS MY TRACTOR'S SEXY   Kenny Chesney
+ 75    77   3    LEFT AND RIGHT                 D'angelo & Method Man
+ 76    80   16   THERE SHE GOES                 Sixpence None The Richer
+ 77    63   16   WE CAN'T BE FRIENDS            Deborah Cox
+ 78    85   4    N 2 GETHER NOW                 Limp Bizkit & Method Man
+ 79     -   1    THE GREAT BEYOND               R.E.M.
+ 80    89   2    SMILE                          Lonestar
+ 81    70   10   COME ON OVER                   Shania Twain
+ 82    83   23   ROCKAFELLER SKANK              Fatboy Slim
+ 83     -   1    SAY MY NAME                    Destiny’s Child
+ 84    92   4    THE BLOCK IS HOT               Lil' Wayne & Juvenile
+ 85    86   17   MUSIC OF MY HEART              N' Sync & Gloria Estefan
+ 86     -   1    NO MORE RAIN                   Angie Stone
+ 87    91   9    GUERRILLA RADIO                Rage Against The Machine
+ 88    82   3    NOTORIOUS B.I.G.               Notorious B.I.G.
+ 89     -   1    AULD LANG SYNE                 Kenny G
+ 90    78   10   GIVE YOU WHAT YOU WANT         Chico DeBarge
+ 91    88   11   STEAM                          Ty Herndon
+ 92    87   10   GREATEST ROMANCE EVER SOLD     Artist
+ 93    72   15   I WANT IT ALL                  Warren G & Mack 10
+ 94    94   4    LIVE LAUGH LOVE                Clay Walker
+ 95    90   4    RE-ARRANGED                    Limp Bizkit
+ 96     -   1    ONE NIGHT STAND                J-Shin & LaTocha Scott
+ 97     -   1    DECK THE HALLS                 She Daisy
+ 98    98   4    STILL DRE                      Dr. Dre & Snoop Dogg
+ 99    99   5    L.A. SONG                      Beth Hart
+100   100   5    NASTRADAMUS                    Nas

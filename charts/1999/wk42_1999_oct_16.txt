@@ -1,0 +1,101 @@
+                    Wk 42 – 1999 Oct 16 – USA Top 100
+1    1     7   HEARTBREAKER                             Mariah Carey
+2    41    7   MUSIC OF MY HEART                        N' Sync & Gloria Estefan
+3    2    12   SMOOTH                                   Santana
+4    3    17   UNPRETTY                                 TLC
+5    4     8   MAMBO NO.5                               Lou Bega
+6    5    11   SHE'S ALL I EVER HAD                     Ricky Martin
+7    6    16   GENIE IN A BOTTLE                        Christina Aguilera
+8    9     7   MY LOVE IS YOUR LOVE                     Whitney Houston
+9    7    16   SOMEDAY                                  Sugar Ray
+10   8     6   I NEED TO KNOW                           Marc Anthony
+11   10   20   SCAR TISSUE                              Red Hot Chilli Peppers
+12   17    8   IF I COULD TURN BACK THE HANDS OF TIME   R. Kelly
+13   13    6   WE CAN'T BE FRIENDS                      Deborah Cox
+14   14   25   WHERE MY GIRL'S AT                       702
+15   12   22   ALL STAR                                 Smash Mouth
+16   11   15   BAILAMOS                                 Enrique Iglesias
+17   18   10   STEAL MY SUNSHINE                        Len
+18   15   11   I DO                                     98 Degrees
+19   16   15   BLACK BALLOON                            Goo Goo Dolls
+20   20   18   SHE'S SO HIGH                            Tal Bachman
+21   24    8   BACK AT ONE                              Brian McKnight
+22   22   15   BACK THAT THANG UP                       Juvenile
+23   21   26   I WANT IT THAT WAY                       Backstreet Boys
+24   29    5   CRAZY                                    Britney Spears
+25   23    6   LOST IN YOU                              Garth Brooks & Chris Gaines
+26   25   16   SPEND MY LIFE WITH YOU                   Eric Benet & Tamia
+27   31   14   VIVRANT THING                            Q-Tip
+28   30    5   I WANT IT ALL                            Warren G & Mack 10
+29   35    8   I LOVE YOU                               Martina McBride
+30   34    5   LARGER THAN LIFE                         Backstreet Boys
+31   28   10   SOMETHING LIKE THAT                      Tim McGraw
+32   26   14   SO ANXIOUS                               Ginuine
+33   37    9   GET GONE                                 Ideal
+34   40   23   LARGER THAN LIFE                         Shania Twain
+35   27   18   BILLS BILLS BILLS                        Destiny’s Child
+36   44    5   GOTTA MAN                                Eve
+37   19   14   SUMMER GIRLS                             LFO
+38   38    6   THERE SHE GOES                           Sixpence None The Richer
+39   39   13   READY TO RUN                             Dixie Chicks
+40   46    4   BUG A BOO                                Destiny's Child
+41   32   23   IF YOU HAD MY LOVE                       Jennifer Lopez
+42   33   16   OUT OF MY HEAD                           Fastball
+43   63    4   SATISFY YOU                              Puff Daddy & R. Kelly
+44   48    4   U KNOW WHAT'S UP                         Donell Jones
+45   45    5   BLING BLING                              BG
+46   42   21   LAST KISS                                Pearl Jam
+47   36   15   NEVER GONNA LET YOU GO                   Faith Evans
+48   54    7   WHAT DO YOU SAY TO THAT                  George Strait
+49   58    6   I'M ALREADY TAKEN                        Steve Wariner
+50   43   20   AMAZED                                   Lonestar
+51   51    5   ANGELS WOULD FALL                        Melissa Etheridge
+52   55    8   GIRL'S BEST FRIEND                       Jay-Z
+53   52   16   WHAT YA WANT                             Eve & Nokio
+54   62   14   AMERICAN WOMAN                           Lenny Kravitz
+55   53   20   LESSON IN LEAVIN'                        Jo Dee Messina
+ 56    -    1   WAITING FOR TONIGHT            Jennifer Lopez
+ 57   66   12   LONELY AND GONE                Montgomery Gentry
+ 58   61    6   HIGHER                         Creed
+ 59   60   14   WHAT'S MY AGE AGAIN            Blink 182
+ 60   50   15   YOU HAD ME FROM HELLO          Kenny Chesney
+ 61   84    2   STAY THE NIGHT                 IMX
+ 62   74    3   HOME TO YOU                    John Michael Montgomery
+ 63   71    6   SHE'S IN LOVE                  Mark Wills
+ 64   64   10   IT'S ALL ABOUT YOU             Tracie Spencer
+ 65   65    6   CANDY                          Mandy Moore
+ 66   59   19   HEY LEONARDO                   Blessed Union Of Souls
+ 67   76    2   MEET VIRGINIA                  Train
+ 68   49   15   LITTLE MAN                     Alan Jackson
+ 69    -    1   I WANNA LOVE YOU FOREVER       Jessica Simpson
+ 70   67   11   I'LL STILL LOVE YOU MORE       Trisha Yearwood
+ 71    -    1   BIG DEAL                       LeAnn Rimes
+ 72   57   17   JIGGA MY NIGGA                 Jay-Z
+ 73   77    3   I'LL GO CRAZY                  Andy Griggs
+ 74   68   17   I COULD NOW ASK FOR MORE       Edwin McCain
+ 75    -    1   WHEN I SAID I DO               Clint Black
+ 76   73    9   MEETING IN MY BEDROOM          Silk
+ 77   72   16   YOU'LL BE IN MY HEART          Phil Collins
+ 78   80    3   CHEMICALS BETWEEN US           Bush
+ 79   69   13   ALL THAT I CAN SAY             Mary J Blige
+ 80    -    1   LEARN TO FLY                   Foo Fighters
+ 81   81    2   B-PLEASE                       Snoop Dogg
+ 82    -    1   MISSING YOU                    Brooks & Dunn
+ 83   87    5   ALL THINGS CONSIDERED          Yankee Grey
+ 84    -    1   DOLPHIN'S CRY                  Live
+ 85   85    3   15 MINUTES                     Marc Nelson
+ 86   86   13   ALL N MY GRILL                 Missy Elliott
+ 87   70   10   WANNA BE A BALLER              Lil Troy
+ 88   79    4   BEAUTY                         Dru Hill
+ 89   89    8   LIGHTNING DOES THE WORK        Chad Brock
+ 90   90   20   HAPPILY EVER AFTER             Case
+ 91   78   16   JAMBOUREE                      Naughty By Nature
+ 92   75   17   THE SECRET OF LIFE             Faith Hill
+ 93   82   11   NOW YOU SEE ME NOW YOU DON'T   Lee Ann Womack
+ 94   91   10   I'LL BE YOUR EVERYTHING        Youngstown
+ 95   93   16   EVERYONE FALLS IN LOVE         Tanto Metro & Devonte
+ 96   96   11   SEXUAL                         Amber
+ 97   90   14   SMILE                          Vitamin C
+ 98   94   18   EVERYTHING IS EVERYTHING       Lauryn Hill
+ 99   92   19   BEAUTIFUL STRANGER             Madonna
+100    -    1   STEAM                          Ty Herndon

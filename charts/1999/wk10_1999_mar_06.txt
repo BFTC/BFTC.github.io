@@ -1,0 +1,101 @@
+                    Wk 10 – 1999 March 6 – USA Top 100
+1    1    14   ANGEL OF MINE                  Monica
+2    2    12   BELIEVE                        Cher
+3    3    11   HEARTBREAK HOTEL               Whitney Houston/Faith Evans/Kelly Price
+4    5    14   ANGEL                          Sarah McLachlan
+5    4    16   BABY ONE MORE TIME             Britney Spears
+6    7    6    ALL I HAVE TO GIVE             Backstreet Boys
+7    6    23   NOBODY'S SUPPOSED TO BE HERE   Deborah Cox
+8    8    14   A LITTLE MORE TIME ON YOUR     'N Sync
+9    9    14   HAVE YOU EVER                  Brandy
+10   11   3    YOU                            Jesse Powell
+11   10   14   SLIDE                          Goo Goo Dolls
+12   15   9    EVERY MORNING                  Sugar Ray
+13   12   11   FADED PICTURES                 Cas & Joe
+14   13   6    TAKING EVERYTHING              Gerald Levert
+15   26   3    NO SCRUBS                      TLC
+16   14   14   SAVE TONIGHT                   Eagle-Eye Cherry
+17   35   5    KISS ME                        Sixpence None The Richer
+18   16   14   JUMPER                         Third Eye Blind
+19   19   14   MIAMI                          Will Smith
+20    -   1    IT AIN'T MY FAULT              Silkk The Shocker
+21   23   5    I STILL BELIEVE                Mariah Carey
+22   22   11   WHEN A WOMAN'S FED UP          R. Kelly
+23   17   14   I'M YOUR ANGEL                 R. Kelly & Celine Dion
+24   18   12   I DON'T WANT TO MISS A THING   Mark Chesnutt
+25   25   9    EX-FACTOR                      Lauryn Hill
+26   40   2    STAY THE SAME                  Joey McIntyre
+27   27   7    SWEET LADY                     Tyrese
+28   21   14   LULLABY                        Shawn Mullins
+29   20   14   HANDS                          Jewel
+30   30   11   BACK 2 GOOD                    Matchbox 20
+31   24   14   WHEN YOU BELIEVE               Whitney Houston & Mariah Carey
+32   32   16   GHETTO COWBOY                  Mo Thugs Family
+33   31   23   CAN I GET A                    Jay-Z
+34   42   5    HOW FOREVER FEELS              Kenny Chesney
+35   28   14   THESE ARE THE TIMES            Dru Hill
+36   34   14   FLY AWAY                       Lenny Kravitz
+37   37   13   NO PLACE THAT FAR              Sara Evans
+38   38   7    MEANWHILE                      George Strait
+39   44   7    YOU WERE MINE                  Dixie Chicks
+40   33   14   HOLD ON TO ME                  John Michael Montgomery
+41   29   26   LATELY                         Divine
+42   36   12   UNBELIEVABLE                   Diamond Rio
+43   50   12   WHAT'S IT LIKE                 Everlast
+44   39   17   DOO WOP                        Lauryn Hill
+45   41   42   IRIS                           Goo Goo Dolls
+46   49   24   I'LL BE                        Edwin McCain
+47   48   14   FROM THIS MOMENT ON            Shania Twain
+48   57   4    YOU GOT ME                     Roots
+49   46   13   STAND BESIDE ME                Jo Dee Messina
+50   45   14   INSIDE OUT                     Eve 6
+51   51   14   YOU GET WHAT YOU GIVE          New Radicals
+52   58   7    BUSY MAN                       Billy Ray Cyrus
+53   43   18   TRIPPIN'                       Total
+54   54   5    ALL NIGHT LONG                 Faith Evans ft Puff Daddy
+55   56   13   FLY                            Wilkinsons
+ 56   68   3    C'EST LA VIE                      B*Witched
+ 57   53   17   LOVE LIKE THIS                    Faith Evans
+ 58   47   14   TAKE ME THERE                     Blackstreet
+ 59   55   14   CHANGES                           2 Pac
+ 60   61   7    POWERFUL THING                    Trisha Yearwood
+ 61   59   5    HOW DO I DEAL                     Jennifer Love Hewitt
+ 62   52   14   FOR A LITTLE WHILE                Tim McGraw
+ 63   79   2    MY NAME IS                        Eminem
+ 64   60   8    I WILL GET THERE                  Boyz II Men
+ 65   71   3    WHAT'S SO DIFFERENT               Ginuwine
+ 66   66   7    SOMEBODY'S OUT THERE WATCHING     Kinleys
+ 67   64   6    WOOF                              Snoop Dogg
+ 68   72   4    I CAN'T GET OVER YOU              Brooks & Dunn
+ 69   65   7    THAT DON'T IMPRESS ME MUCH        Shania Twain
+ 70   74   4    WE LIKE TO PARTY                  Vengaboys
+ 71   77   2    I'LL THINK OF A REASON LATER      Lee Ann Womack
+ 72   84   3    ORDINARY LIFE                     Chad Brock
+ 73   73   6    WATCH FOR THE HOOK                Cool Breeze
+ 74   69   14   PRETTY FLY                        Offspring
+ 75   75   4    CRUSH                             Dave Matthews Band
+ 76   76   5    HA                                Juvenile
+ 77   62   11   IT'S ALL BEEN DONE                Barenaked Ladies
+ 78   63   5    UNSENT                            Alanis Morissette
+ 79   80   5    KEEPIN' UP                        Alabama
+ 80   70   14   FATHER OF MINE                    Everclear
+ 81   94   2    DRIVE ME WILD                     Sawyer Brown
+ 82   81   2    MALIBU                            Hole
+ 83    -   1    WISH YOU WERE HERE                Mark Wills
+ 84    -   1    LOVE AIN'T LIKE THAT              Faith Hill
+ 85   82   14   HOME ALONE                        R. Kelly
+ 86   86   2    ONE                               Creed
+ 87   87   14   SWEETEST THING                    U2
+ 88    -   1    HEAVY                             Collective Soul
+ 89   78   14   ROSA PARKS                        Outkast
+ 90   93   12   LUV ME LUV ME                     Shaggy
+ 91   88   14   NEVER THERE                       Cake
+ 92   90   2    BLUE MONDAY                       Orgy
+ 93   91   9    SILLY HO                          TLC
+ 94   89   14   THERE YOU HAVE IT                 Blackhawk
+ 95   83   14   ANGEL IN DISGUISE                 Brandy
+ 96   67   13   WRONG NIGHT                       Reba
+ 97   92   19   PUSHIN' WEIGHT                    Ice Cube
+ 98   85   14   SPIRIT OF A BOY WISDOM OF A MAN   Randy Travis
+ 99   95   11   GOODBYE                           Spice Girls
+100   98   2    BREAK UP 2 MAKE UPS               Method Man

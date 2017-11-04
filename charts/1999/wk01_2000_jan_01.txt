@@ -1,0 +1,101 @@
+                      Wk 1 – 2000 Jan 1 – USA Top 100
+1     1   23   SMOOTH                        Santana
+2     2   19   BACK AT ONE                   Brian McKnight
+3     3   12   I WANNA LOVE YOU FOREVER      Jessica Simpson
+4     5   18   MY LOVE IS YOUR LOVE          Whitney Houston
+5     4   11   I KNEW I LOVED YOU            Savage Garden
+6     6   17   I NEED TO KNOW                Marc Anthony
+7     7   6    HOT BOYZ                      Missy Elliott
+8     8   15   U KNOW WHAT'S UP              Donell Jones
+9     9   11   BRING IT ALL TO ME            Blaque Ivory
+10   11   7    GIRL ON TV                    LFO
+11   13   6    WHAT A GIRL WANTS             Christina Aguilera
+12   10   9    24/7                          Kevon Edmonds
+13   16   4    BLUE                          Eiffel 65
+14   14   10   THEN THE MORNING COMES        Smash Mouth
+15   17   4    HE CAN'T LOVE U               Jagged Edge
+16   12   12   WAITING FOR TONIGHT           Jennifer Lopez
+17   30   8    THAT'S THE WAY IT IS          Celine Dion
+18   47   3    CHRISTMAS SONG                Christina Aguilera
+19   29   3    DANCIN'                       Guy
+20   15   21   STEAL MY SUNSHINE             Len
+21   24   11   GET IT ON TONITE              Montell Jordan
+22   22   12   LEARN TO FLY                  Foo Fighters
+23   26   12   BIG DEAL                      LeAnn Rimes
+24   21   13   MEET VIRGINIA                 Train
+25   20   28   UNPRETTY                      TLC
+26   28   9    BREATHE                       Faith Hill
+27   25   26   BACK THAT THANG UP            Juvenile
+28   23   10   4-5-6                         Sole & JT Money
+29   36   13   STAY THE NIGHT                IMx
+30   44   7    DON'T SAY YOU LOVE ME         M2M
+31   19   36   WHERE MY GIRL'S AT            702
+32   18   19   MAMBO NO.5                    Lou Bega
+33   35   9    HANGIN' AROUND                Counting Crows
+34   38   6    TAKE A PICTURE                Filter
+35   27   20   GET GONE                      Ideal
+36   34   27   SOMEDAY                       Sugar Ray
+37   31   11   HE DIDN'T HAVE TO BE          Brad Paisley
+38   33   11   GOT YOUR MONEY                Ol' Dirty Bastard
+39   39   7    SHAKE YOUR BON BON            Ricky Martin
+40   40   9    IF YOU LOVE ME                Mint Condition
+41   37   26   BLACK BALLOON                 Goo Goo Dolls
+42   67   5    RHYTHM DIVINE                 Enrique Iglesias
+43   50   4    THANK GOD I FOUND YOU         Mariah Carey & 98 Degrees
+44   32   15   SATISFY YOU                   Puff Daddy & R. Kelly
+45   45   22   AMAZED                        Lonestar
+46   46   10   WHAT DO YOU SAY               Reba McEntire
+47   42   7    YOU CAN DO IT                 Ice Cube
+48   52   6    COWBOY TAKE ME AWAY           Dixie Chicks
+49   41   12   WHEN I SAID I DO              Clint Black
+50   54   6    MY BEST FRIEND                Tim McGraw
+51   48   7    GOT TO GET IT                 Sisqo & Make It Hot
+52   59   5    ALL THE SMALL THINGS          Blink 182
+53    -   1    THIS GIFT                     98 Degrees
+54   89   2    AULD LANG SYNE                Kenny G
+55   56   7    ANGELS                        Robbie Williams
+ 56    83   2    SAY MY NAME                           Destiny's Child
+ 57    55   8    POP A TOP                             Alan Jackson
+ 58    63   5    CAUGHT OUT THERE                      Kelis
+ 59    43   14   15 MINUTES                            Marc Nelson
+ 60    51   18   HEARTBREAKER                          Mariah Carey
+ 61    61   17   HIGHER                                Creed
+ 62    62   16   BLING BLING                           BG
+ 63    58   10   WILL 2 K                              Will Smith
+ 64    64   8    DEEP INSIDE                           Mary J. Blige & Elton John
+ 65    57   16   ALL THINGS CONSIDERED                 Yankee Gray
+ 66    60   19   I LOVE YOU                            Martina McBride
+ 67    69   21   SEXUAL                                Amber
+ 68    71   4    NONE OF UR FRIENDS BUSINESS           Ginuwine
+ 69    97   2    DECK THE HALLS                        SheDaisy
+ 70    75   4    LEFT AND RIGHT                        D'angelo & Method Man
+ 71    80   3    SMILE                                 Lonestar
+ 72    79   2    THE GREAT BEYOND                      R.E.M.
+ 73    72   15   BUG A BOO                             Destiny's Child
+ 74     -   1    SHOW ME THE MEANING OF BEING LONELY   Backstreet Boys
+ 75    77   17   WE CAN'T BE FRIENDS                   Deborah Cox
+ 76    53   16   CRAZY                                 Britney Spears
+ 77    96   2    ONE NIGHT STAND                       J-Shin & LaTocha
+ 78    78   5    N 2 GETHER NOW                        Limp Bizkit & Method Man
+ 79    86   2    NO MORE RAIN                          Angie Stone
+ 80    68   14   HOME TO YOU                           John Michael Montgomery
+ 81    73   14   CHEMICALS BETWEEN US                  Bush
+ 82    84   5    THE BLOCK IS HOT                      Lil' Wayne/Juvenile/BG
+ 83    87   10   GUERRILLA RADIO                       Rage Against The Machine
+ 84    94   5    LIVE LAUGH LOVE                       Clay Walker
+ 85    88   14   NOTORIOUS B.I.G.                      Notorious B.I.G. & Puff Daddy
+ 86    74   7    SHE THINKS MY TRACTOR'S SEXY          Kenny Chesney
+ 87    70   16   LARGER THAN LIFE                      Backstreet Boys
+ 88    76   17   THERE SHE GOES                        Sixpence Non The Richer
+ 92    89   11   GREATEST ROMANCE EVER SOLD            The Artist
+ 90    82   24   ROCKAFELLER SKANK                     Fatboy Slim
+ 91    90   11   GIVE YOU WHAT YOU WANT                Chico DeBarge
+ 92    85   18   MUSIC OF MY HEART                     'N Sync & Gloria Estefan
+ 93     -   1    A COUNTRY BOY CAN SURVIVE             Chad Brock/Hank Williams J/George Jones
+ 94     -   1    I WANNA KNOW                          Joe
+ 95    95   5    RE-ARRANGED                           Limp Bizkit
+ 96    99   6    L.A. SONG                             Beth Hart
+ 97    66   16   GOTTA MAN                             Eve
+ 98     -   1    THE QUITTIN' KIND                     Joe Diffie
+ 99    91   12   STEAM                                 Ty Herndon
+100   100   6    NASTRUDAMUS                           Nas
