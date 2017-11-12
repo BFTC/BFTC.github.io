@@ -5,59 +5,430 @@
     <meta http-equiv="Content-Language" content="en-US">
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title>Magenta for Toni</title>
-    <style type="text/css">
+     <style type="text/css">
       body {
         background-color: #00CCFF;
       }
+      #bg {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+      }
+      #family {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        margin: auto; 
+        max-width: 100%;
+        max-height: 100%;
+        visibility: hidden;
+        z-index: -2;
+      }
+      #oops {
+        position: absolute;
+        top: -550%;
+        right: 2%;
+        font-family: Verdana;
+        font-weight: bold;
+        text-align: center;
+        text-size: medium;
+        text-decoration: none !important;
+        color: #fff;
+        z-index: 9999;
+      }
+      .station {
+        font-weight: bold;
+        text-align: center;
+        text-size: small;
+        text-decoration: none !important;
+        color: #fff;
+      }
+      .station:visited {
+        color: #eee;
+      }
       div {
         position: absolute;
-        bottom: 15%;
+        left: 0;
         width: 100%;
+      }
+      #div1 {
+        bottom: 45%;
+        visibility: visible;
+      }
+      #div2 {
+        bottom: 35%;
+      }
+      td>div {
+        position: relative;
+      }
+      #players {
+        position: relative;
+        top: 90%;
+        left: 14.5%;
+        height: 8%;
+        width: 100%;
+        margin: auto;
+        visibility: hidden;
+        z-index: 2;
+      }
+      #stations {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+        wigth: 100%;
+        margins auto;
+      }
+      }
+      tr {
+        height: 100%;
+      }
+      td {
+        height: 100%;
+        font-family: Verdana;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        color: #000;
+        font-size: 80%;
+        z-index: 2;
+      }
+      td>div {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%
+        width: 100%
+      }
+      .btn {
+        position: absolute;
+        top: 25%;
+        left: 4%;
+        width: 4%;
+        height: 42%;
+        margin: auto 0;
+        opacity: 0.85;
+        z-index: 3;
+      }
+      .stop {
+        left: 3.5%;
+        width: 4.5%;
       }
       p {
         position: relative;
-        bottom: 10px;
+        top: 0;
         width: 70%;
-        margin: 50px auto 0;
+        margin: 0 auto;
         font-family: verdana;
         font-weight: bold;
         text-align: center;
-        line-height: 2;
-        font-size: 170%;
+        color: #fff;
+        font-size: 200%;
+        line-height: 1.5;
+      }
+      #p2 {
+        visibility: visible;
+        z-index: 2;
       }
       #magenta {
         position: relative;
-        top: 10%;
-        width: 70%;
-        background-color: #00CCFF;
-        border-radius: 50px;
-        padding: 100px 0 100px 0;
+        bottom: 0;
+        border-radius: 200px;
+        padding: 5%;
         font-size: 200%;
-        -webkit-transition: 2s;
-        -moz-transition: 2s;
-        -o-transition: 2s;
-        -ms-transition: 2s;
+        line-height: 1.5;
+        -webkit-transition: 0.6s;
+        -moz-transition: 0.6s;
+        -o-transition: 0.6s;
+        -ms-transition: 0.6s;
+        z-index: 2;
       }
       #magenta:hover {
         background-color: magenta;
         font-size: 300%;
       }
+      #luv {
+        position: absolute;
+        left: 0;
+        bottom: 40%;
+        width: 100%;
+        font-family: "Comic Sans MS";
+        font-weight: bold;
+        text-align: center;
+        color: #0CF;
+        font-size: 500%;
+        opacity: 0;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -o-transition: 1s;
+        -ms-transition: 1s;
+        z-index: -1;
+      }
       #Toni {
         background-color: green;
         border-radius: 50px;
         padding: 10px 20px 10px 20px;
+        z-index: 2;
       }
-      #heart {
-        background-color: HotPink;
+      #easter_egg {
+        position: absolute;
+        bottom: 3%;
+        left: 2%;
+        width: 20%;
+        background: rgba(187,255,221,1);
+        opacity: 0;
+        -webkit-transition: 4s;
+        -moz-transition: 4s;
+        -o-transition: 4s;
+        -ms-transition: 4s;
+        z-index: -1;
+      }
+      #mlp-green {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        max-width: 100%;
+        height: 60%;
+        opacity: 0;
+        -webkit-transition: 5s;
+        -moz-transition: 5s;
+        -o-transition: 5s;
+        -ms-transition: 5s;
+        z-index: -1;
+      }
+      #mlp-ts {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        max-width: 100%;
+        height: 65%;
+        opacity: 0;
+        -webkit-transition: 5s;
+        -moz-transition: 5s;
+        -o-transition: 5s;
+        -ms-transition: 5s;
+        z-index: -1;
+      }
+      #mlp-rd {
+        position: absolute;
+        top: 34%;
+        left: 71%;
+        max-width: 100%;
+        height: 65%;
+        opacity: 0;
+        -webkit-transition: 5s;
+        -moz-transition: 5s;
+        -o-transition: 5s;
+        -ms-transition: 5s;
+        z-index: -1;
+      }
+      #g-heart {
+        position: absolute;
+        top: 13%;
+        left: 22%;
+        max-width: 100%;
+        height: 75%;
+        visibility: hidden;
+        z-index: 3;
+      }
+      #lol {
+        position: absolute;
+        bottom: -270%;
+        left: 42%;
         border-radius: 200px;
-        padding: 28px 20px;
+        margin: 20px auto;
+        max-width: 15%;
+        visibility: hidden;
+        opacity: 1;
+        -moz-transition: -moz-transform 15s ease-in-out;
+        -webkit-transition: -webkit-transform 15s ease-in-out;
+        -o-transition: -o-transform 15s ease-in-out;
+        transition:         transform 15s ease-in-out;
+      }
+      #lol:hover {
+        -moz-transform: rotate(50580deg);
+        -webkit-transform: rotate(50580deg);
+        -o-transform: rotate(50580deg);
+        transform: rotate(50580deg);
+      }
+      #my-heart {
+        position: relative;
+        top: 10px;
+        max-width: 10%;
       }
     </style>
   </head>
   <body>
-    <p id="magenta">Magenta for <span id="Toni">Toni</span> <span id="heart"><3</span></p>
-    <div>
-      <p>(Hover over text for effect)<br/>:-)</p>
+    <div id="bg" onclick="document.getElementById('p2').style.visibility='visible';">
+      <img id="family" src="family.jpg">
+      <div id="players">
+        <span id="stations">
+          <table>
+            <tr>
+              <td>
+                <a class="station" href="http://yomiradio.com/ht/" target="_blank"
+                  onmouseover="document.getElementById('mlp-ts').style.opacity='1';"
+                  onmouseout="document.getElementById('mlp-ts').style.opacity='0';">
+                  Yesterday Once More
+                </a>
+              </td>
+              <td>
+                <a class="station" href="http://www.bandwagonradio.com/ht/" target="_blank"
+                  onmouseover="document.getElementById('mlp-green').style.opacity='1';"
+                  onmouseout="document.getElementById('mlp-green').style.opacity='0';">
+                  Bandwagon Radio
+                </a>
+              </td>
+              <td>
+                <a class="station" href="http://grandlakeradionetwork.com/" target="_blank"
+                  onmouseover="document.getElementById('mlp-rd').style.opacity='1';"
+                  onmouseout="document.getElementById('mlp-rd').style.opacity='0';">
+                  Grand Lakes Radio
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <img id="play_yom" class="play btn" src="Play.png"
+                    onclick="
+                      document.getElementById('yom').setAttribute('src','http://yom.purestream.net:6072/;');
+                      document.getElementById('yom').play();
+                      document.getElementById('stop_yom').style.visibility='visible';
+                      document.getElementById('play_yom').style.visibility='hidden';"/>
+                  <img id="stop_yom" class="stop btn" src="Stop.png"
+                    onclick="
+                      document.getElementById('yom').setAttribute('src','');
+                      document.getElementById('play_yom').style.visibility='visible';
+                      document.getElementById('stop_yom').style.visibility='hidden';"/>
+                  <audio id="yom" controls src="">Yesterday Once More</audio>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <img id="play_bwr" class="play btn" src="Play.png"
+                    onclick="
+                      document.getElementById('bwr').setAttribute('src','http://radio.purestream.net:7072/;');
+                      document.getElementById('bwr').play();
+                      document.getElementById('stop_bwr').style.visibility='visible';
+                      document.getElementById('play_bwr').style.visibility='hidden';"/>
+                  <img id="stop_bwr" class="stop btn" src="Stop.png"
+                    onclick="
+                      document.getElementById('bwr').setAttribute('src','');
+                      document.getElementById('play_bwr').style.visibility='visible';
+                      document.getElementById('stop_bwr').style.visibility='hidden';"/>
+                  <audio id="bwr" controls src="">Bandwagon Radio</audio>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <img id="play_glr" class="play btn" src="Play.png"
+                    onclick="
+                      document.getElementById('glr').setAttribute('src','http://205.164.41.50:1976/;');
+                      document.getElementById('glr').play();
+                      document.getElementById('stop_glr').style.visibility='visible';
+                      document.getElementById('play_glr').style.visibility='hidden';"/>
+                  <img id="stop_glr" class="stop btn" src="Stop.png"
+                    onclick="
+                      document.getElementById('glr').setAttribute('src','');
+                      document.getElementById('play_glr').style.visibility='visible';
+                      document.getElementById('stop_glr').style.visibility='hidden';"/>
+                  <audio id="glr" controls src="">Grand Lakes Radio, Tulsa</audio>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </span>
+      </div>
     </div>
+    <div id="div1">
+      <p id="magenta">
+        <span onclick="
+          document.body.style.backgroundColor='#00CCFF';"><strike>Magenta</strike>
+        </span>
+        <br/>
+        <span onclick="
+          document.body.style.backgroundColor='#FF00FF';"><u><i>Fuchsia</i></u>
+        </span>
+        <span onclick="
+          document.getElementById('div1').style.visibility='hidden';">for
+        </span>
+        <span id="Toni"
+          onmouseover="
+            if (document.getElementById('yom').paused){
+              document.getElementById('play_yom').style.visibility='visible';
+              document.getElementById('stop_yom').style.visibility='hidden';
+            }else{
+              document.getElementById('stop_yom').style.visibility='visible';
+              document.getElementById('play_yom').style.visibility='hidden';
+            };
+            if (document.getElementById('bwr').paused){
+              document.getElementById('play_bwr').style.visibility='visible';
+              document.getElementById('stop_bwr').style.visibility='hidden';
+            }else{
+              document.getElementById('stop_bwr').style.visibility='visible';
+              document.getElementById('play_bwr').style.visibility='hidden';
+            };
+            if (document.getElementById('glr').paused){
+              document.getElementById('play_glr').style.visibility='visible';
+              document.getElementById('stop_glr').style.visibility='hidden';
+            }else{
+              document.getElementById('stop_glr').style.visibility='visible';
+              document.getElementById('play_glr').style.visibility='hidden';
+            };
+            document.getElementById('players').style.visibility='visible';"
+          onclick="document.getElementById('luv').style.zIndex='5';
+            document.getElementById('luv').style.opacity='1';
+            document.getElementById('g-heart').style.visibility='visible';
+            document.body.style.backgroundColor='#842A84';
+            document.getElementById('div1').style.visibility='hidden';"
+          />Toni
+        </span>
+        <span id="heart"><img id="my-heart" src="my-heart.png"
+          onclick="document.getElementById('family').style.visibility='visible';"
+          onmouseover="document.getElementById('easter_egg').style.opacity='1';"
+          onmouseout="document.getElementById('easter_egg').style.opacity='0';"/>
+        </span>
+      </p>
+    </div>
+    <div id="div2">
+      <p id="p2">
+        <span onclick="document.getElementById('family').style.visibility='hidden';">Have</span>
+        <span onclick="document.getElementById('p2').style.visibility='hidden';"> a </span>
+        <span onclick="document.getElementById('lol').style.visibility='visible';">LOVELY</span>
+        <span onclick="document.getElementById('div1').style.visibility='visible';">day!!!</span>
+      </p>
+      <img id="lol" src="lol_image.gif"
+        onclick="
+          document.getElementById('lol').style.visibility='hidden';
+          document.getElementById('players').style.visibility='hidden';
+          document.getElementById('play_yom').style.visibility='hidden';
+          document.getElementById('play_bwr').style.visibility='hidden';
+          document.getElementById('play_glr').style.visibility='hidden';
+          document.getElementById('stop_yom').style.visibility='hidden';
+          document.getElementById('stop_bwr').style.visibility='hidden';
+          document.getElementById('stop_glr').style.visibility='hidden';"/>
+      <a id="oops" href="test_toni.htm"
+        onmouseover="document.getElementById('p2').style.visibility='visible';">
+        Oops!
+      </a>
+    <a href="#" id="play_stop" onclick="if (document.getElementById('yom').paused){document.querySelector('#yom').setAttribute('src','http://yom.purestream.net:6072/;');document.getElementById('yom').play();document.getElementById('play_stop').innerHTML='Stop';}else{document.querySelector('#yom').setAttribute('src','');document.getElementById('play_stop').innerHTML='Play';};">Play</a>
+<!--
+  <p onmouseover="document.getElementById('mood').innerHTML=(document.getElementById('yom').duration);" id="mood"><b><br/>Play</b></p>
+  <input name="color-input" id="color-field" type="color" value="#00CCFF" title="Color picker"/>
+-->
+    </div>
+    <p id="luv" onclick="document.getElementById('luv').style.zIndex='-1';document.getElementById('luv').style.opacity='0';document.getElementById('g-heart').style.visibility='hidden';document.getElementById('div1').style.visibility='visible';">I LOVE YOU!</p>
+    <img id="easter_egg" src="Rabbit.png"/>
+    <img id="mlp-ts" src="twilight_sparkle.gif"/>
+    <img id="mlp-green" src="greeny.gif"/>
+    <img id="mlp-rd" src="Rainbow_Dash.gif"/>
+    <img id="g-heart" onclick="document.getElementById('luv').style.zIndex='-1';document.getElementById('luv').style.opacity='0';document.getElementById('g-heart').style.visibility='hidden';document.getElementById('div1').style.visibility='visible';" src="g-heart.gif"/>
   </body>
 </html>
