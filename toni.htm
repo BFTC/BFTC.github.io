@@ -1,0 +1,436 @@
+			<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Language" content="en-US">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Magenta for Toni</title>
+     <style type="text/css">
+      body {
+        background-color: #00CCFF;
+      }
+      #bg {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+      }
+      #family {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        margin: auto; 
+        max-width: 100%;
+        max-height: 100%;
+        visibility: hidden;
+        z-index: -2;
+      }
+      #oops {
+        position: absolute;
+        top: -550%;
+        right: 2%;
+        font-family: Verdana;
+        font-weight: bold;
+        text-align: center;
+        text-size: medium;
+        text-decoration: none !important;
+        color: #fff;
+        z-index: 9999;
+      }
+      .station {
+        font-weight: bold;
+        text-align: center;
+        text-size: small;
+        text-decoration: none !important;
+        color: #fff;
+      }
+      .station:visited {
+        color: #eee;
+      }
+      div {
+        position: absolute;
+        left: 0;
+        width: 100%;
+      }
+      #div1 {
+        bottom: 45%;
+        visibility: visible;
+      }
+      #div2 {
+        bottom: 35%;
+      }
+      td>div {
+        position: relative;
+      }
+      #players {
+        position: relative;
+        top: 90%;
+        left: 14.5%;
+        height: 8%;
+        width: 100%;
+        margin: auto;
+        visibility: hidden;
+        z-index: 2;
+      }
+      #stations {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+        wigth: 100%;
+        margins auto;
+      }
+      }
+      tr {
+        height: 100%;
+      }
+      td {
+        height: 100%;
+        font-family: Verdana;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        color: #000;
+        font-size: 80%;
+        z-index: 2;
+      }
+      td>div {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%
+        width: 100%
+      }
+      .btn {
+        position: absolute;
+        top: 25%;
+        left: 4%;
+        width: 4%;
+        height: 42%;
+        margin: auto 0;
+        opacity: 0.85;
+        z-index: 3;
+      }
+      .stop {
+        left: 3.5%;
+        width: 4.5%;
+      }
+      p {
+        position: relative;
+        top: 0;
+        width: 70%;
+        margin: 0 auto;
+        font-family: verdana;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        font-size: 200%;
+        line-height: 1.5;
+      }
+      #p2 {
+        visibility: visible;
+        z-index: 2;
+      }
+      #magenta {
+        position: relative;
+        bottom: 0;
+        border-radius: 200px;
+        padding: 5%;
+        font-size: 200%;
+        line-height: 1.5;
+        -webkit-transition: 0.6s;
+        -moz-transition: 0.6s;
+        -o-transition: 0.6s;
+        -ms-transition: 0.6s;
+        z-index: 2;
+      }
+      #magenta:hover {
+        background-color: magenta;
+        font-size: 300%;
+      }
+      #luv {
+        position: absolute;
+        left: 0;
+        bottom: 40%;
+        width: 100%;
+        font-family: "Comic Sans MS";
+        font-weight: bold;
+        text-align: center;
+        color: #0CF;
+        font-size: 500%;
+        opacity: 0;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -o-transition: 1s;
+        -ms-transition: 1s;
+        z-index: -1;
+      }
+      #Toni {
+        background-color: green;
+        border-radius: 50px;
+        padding: 10px 20px 10px 20px;
+        z-index: 2;
+      }
+      #easter_egg {
+        position: absolute;
+        bottom: 3%;
+        left: 2%;
+        width: 20%;
+        background: rgba(187,255,221,1);
+        opacity: 0;
+        -webkit-transition: 4s;
+        -moz-transition: 4s;
+        -o-transition: 4s;
+        -ms-transition: 4s;
+        z-index: -1;
+      }
+      #mlp-green {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        max-width: 100%;
+        height: 60%;
+        opacity: 0;
+        -webkit-transition: 5s;
+        -moz-transition: 5s;
+        -o-transition: 5s;
+        -ms-transition: 5s;
+        z-index: -1;
+      }
+      #mlp-ts {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        max-width: 100%;
+        height: 65%;
+        opacity: 0;
+        -webkit-transition: 5s;
+        -moz-transition: 5s;
+        -o-transition: 5s;
+        -ms-transition: 5s;
+        z-index: -1;
+      }
+      #mlp-rd {
+        position: absolute;
+        top: 34%;
+        left: 71%;
+        max-width: 100%;
+        height: 65%;
+        opacity: 0;
+        -webkit-transition: 5s;
+        -moz-transition: 5s;
+        -o-transition: 5s;
+        -ms-transition: 5s;
+        z-index: -1;
+      }
+      #g-heart {
+        position: absolute;
+        top: 13%;
+        left: 22%;
+        max-width: 100%;
+        height: 75%;
+        visibility: hidden;
+        z-index: 3;
+      }
+      #lol {
+        position: absolute;
+        bottom: -270%;
+        left: 42%;
+        border-radius: 200px;
+        margin: 20px auto;
+        max-width: 15%;
+        visibility: hidden;
+        opacity: 1;
+        -moz-transition: -moz-transform 15s ease-in-out;
+        -webkit-transition: -webkit-transform 15s ease-in-out;
+        -o-transition: -o-transform 15s ease-in-out;
+        transition:         transform 15s ease-in-out;
+      }
+      #lol:hover {
+        -moz-transform: rotate(50580deg);
+        -webkit-transform: rotate(50580deg);
+        -o-transform: rotate(50580deg);
+        transform: rotate(50580deg);
+      }
+      #my-heart {
+        position: relative;
+        top: 10px;
+        max-width: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bg" onclick="showEl('p2');">
+      <img id="family" src="family.jpg"/>
+      <div id="players">
+        <span id="stations">
+          <table>
+            <tr>
+              <td>
+                <a class="station" href="http://yomiradio.com/ht/" target="_blank"
+                  onmouseover="fadeEl('mlp-ts',1);"
+                  onmouseout="fadeEl('mlp-ts',0);">
+                  Yesterday Once More
+                </a>
+              </td>
+              <td>
+                <a class="station" href="http://www.bandwagonradio.com/ht/" target="_blank"
+                  onmouseover="fadeEl('mlp-green',1);"
+                  onmouseout="fadeEl('mlp-green',0);">
+                  Bandwagon Radio
+                </a>
+              </td>
+              <td>
+                <a class="station" href="http://grandlakeradionetwork.com/" target="_blank"
+                  onmouseover="fadeEl('mlp-rd',1);"
+                  onmouseout="fadeEl('mlp-rd',0);">
+                  Grand Lakes Radio
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <img id="play_yom" class="play btn" src="Play.png"
+                    onclick="toggleSrc('yom');"/>
+                  <img id="stop_yom" class="stop btn" src="Stop.png"
+                    onclick="toggleSrc('yom');"/>
+                  <audio id="yom" controls src="">Yesterday Once More</audio>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <img id="play_bwr" class="play btn" src="Play.png"
+                    onclick="toggleSrc('bwr');"/>
+                  <img id="stop_bwr" class="stop btn" src="Stop.png"
+                    onclick="toggleSrc('bwr');"/>
+                  <audio id="bwr" controls src="">Bandwagon Radio</audio>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <img id="play_glr" class="play btn" src="Play.png"
+                    onclick="toggleSrc('glr');"/>
+                  <img id="stop_glr" class="stop btn" src="Stop.png"
+                    onclick="toggleSrc('glr');"/>
+                  <audio id="glr" controls src="">Grand Lakes Radio, Tulsa</audio>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </span>
+      </div>
+    </div>
+    <div id="div1">
+      <p id="magenta">
+        <span onclick="setBG('#00CCFF');"><strike>Magenta</strike></span>
+        <br/>
+        <span onclick="setBG('#FF00FF');"><u><i>Fuchsia</i></u></span>
+        <span onclick="hideEl('div1');">for</span>
+        <span id="Toni"
+          onmouseover="toggleBtns('yom');toggleBtns('bwr');
+            toggleBtns('glr');showEl('players');"
+          onclick="setZ('luv',5);setBG('#842A84');showEl('g-heart');
+            hideEl('div1');fadeEl('luv',1);"/>
+          Toni
+        </span>
+        <span id="heart">
+          <img id="my-heart" src="my-heart.png"
+            onclick="showEl('family');"
+            onmouseover="fadeEl('easter_egg',1);"
+            onmouseout="fadeEl('easter_egg',0);"/>
+        </span>
+      </p>
+    </div>
+    <div id="div2">
+      <p id="p2">
+        <span onclick="hideEl('family');">Have</span>
+        <span onclick="hideEl('p2');"> a </span>
+        <span onclick="showEl('lol');">LOVELY</span>
+        <span onclick="showEl('div1');">day!!!</span>
+      </p>
+      <img id="lol" src="lol_image.gif"
+        onclick="hideEl('lol');hideEl('players');
+          hideEl('play_yom');hideEl('play_bwr');hideEl('play_glr');
+          hideEl('stop_yom');hideEl('stop_bwr');hideEl('stop_glr');"/>
+      <a id="oops"
+        onmouseover="showEl('p2')"
+        onclick="location.reload();">
+        Oops!
+      </a>
+
+<!--    <a href="#" id="play_stop" onclick="if (document.getElementById('yom').paused){document.querySelector('#yom').setAttribute('src','http://yom.purestream.net:6072/;');document.getElementById('yom').play();document.getElementById('play_stop').innerHTML='Stop';}else{document.querySelector('#yom').setAttribute('src','');document.getElementById('play_stop').innerHTML='Play';};" style="position:absolute;top:50%;left:10%;">Play</a> -->
+<!-- (document.body.style.backgroundColor) -->
+<!-- <input type="color" id="v_color" value="document.body.style.backgroundColor.value;"> -->
+<!-- <input onmouseover="document.getElementById('play_stop').innerHTML=(document.body.style.backgroundColor);" type="color" id="bg_color" title="Background Color" pattern="#[a-f0-9]{6}" name="color-input" value=(document.body.style.backgroundColor)/> -->
+<!-- <a href="#" id="set_bg_color" onclick="document.body.style.backgroundColor='#FFFF00';" style="position:absolute;top:80%;left:10%;">Set BG Color</a> -->
+<!-- <a href="#" onmouseover="alert(document.body.style.backgroundColor);" style="position:absolute;top:80%;left:10%;">Set BG Color</a> -->
+
+<!--
+  <p onmouseover="document.getElementById('mood').innerHTML=(document.getElementById('yom').duration);" id="mood"><b><br/>Play</b></p>
+  <input name="color-input" id="color-field" type="color" value="#00CCFF" title="Color picker"/>
+-->
+
+    </div>
+    <p id="luv"
+      onclick="setZ('luv',-1);fadeEl('luv',0);hideEl('g-heart');showEl('div1');">
+      I LOVE YOU!
+    </p>
+    <img id="easter_egg" src="Rabbit.png"/>
+    <img id="mlp-ts" src="twilight_sparkle.gif"/>
+    <img id="mlp-green" src="greeny.gif"/>
+    <img id="mlp-rd" src="Rainbow_Dash.gif"/>
+    <img id="g-heart" src="g-heart.gif"
+      onclick="setZ('luv',-1);fadeEl('luv',0);hideEl('g-heart');showEl('div1');"/>
+
+
+<!-- ====================================================== -->
+    <script>
+      var srcyom="http://yom.purestream.net:6072/;";
+      var srcbwr="http://radio.purestream.net:7072/;";
+      var srcglr="http://205.164.41.50:1976/;";
+      document.getElementById('yom').volume=0.1;
+      document.getElementById('bwr').volume=0.1;
+      document.getElementById('glr').volume=0.1;
+      
+      function showEl (element) {
+      		document.getElementById(element).style.visibility="visible";
+      		};
+      function hideEl (element) {
+      		document.getElementById(element).style.visibility="hidden";
+      		};
+      function fadeEl (element,val) {
+      		document.getElementById(element).style.opacity=val;
+      		};
+      function setZ (element,val) {
+      		document.getElementById(element).style.zIndex=val;
+      		};
+      function setBG (cVal) {
+      		document.body.style.backgroundColor=cVal;
+      		};
+      function toggleBtns (station) {
+      		if (document.getElementById(station).paused){
+      		  showEl("play_"+station);
+      		  hideEl("stop_"+station);
+      		}else{
+      		  showEl("stop_"+station);
+      		  hideEl("play_"+station);
+      		};};
+      function toggleSrc (station) {
+      		src="src"+station;
+      		if (document.getElementById(station).paused){
+      		  document.getElementById(station).setAttribute("src",window[src]);
+      		  document.getElementById(station).play();
+      		  toggleBtns(station);
+      		}else{
+      		  document.getElementById(station).setAttribute("src","");
+      		  toggleBtns(station);
+      		};};
+    </script>
+  </body>
+</html>
