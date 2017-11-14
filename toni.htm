@@ -4,10 +4,10 @@
   <head>
     <meta http-equiv="Content-Language" content="en-US">
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Magenta for Toni</title>
+    <title>Magenta? for Toni</title>
      <style type="text/css">
       body {
-        background-color: #00CCFF;
+        background-color: #00ccff;
       }
       #bg {
         position: fixed; 
@@ -26,11 +26,47 @@
         max-width: 100%;
         max-height: 100%;
         visibility: hidden;
-        z-index: -2;
+        z-index: -4;
+      }
+      #colorChange {
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        width: 190px;
+        height: 120px;
+        text-align: center;
+        visibility: hidden;
+        z-index: 2;
+      }
+      #button_span {
+        position: relative;
+        top: 30px;
+        left: -29px;
+        margin: auto;
+      }
+      #colorChange p {
+        position: relative;
+        top: 30%;
+        padding: 2% 3%;
+        font-family: Verdana;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 60%;
+        text-decoration: none !important;
+        color: #000;
+        background-color: #ddd;
+        border: 1px solid #999;
+      }
+      #bg_color {
+        position: relative;
+        top: 0;
+        left: 60px;
+        margin: auto;
+        z-index: 2;
       }
       #oops {
         position: absolute;
-        top: -550%;
+        top: 2%;
         right: 2%;
         font-family: Verdana;
         font-weight: bold;
@@ -123,7 +159,7 @@
       p {
         position: relative;
         top: 0;
-        width: 70%;
+        width: 60%;
         margin: 0 auto;
         font-family: verdana;
         font-weight: bold;
@@ -150,14 +186,14 @@
         z-index: 2;
       }
       #magenta:hover {
-        background-color: magenta;
+        background-color: transparent;
         font-size: 300%;
       }
       #luv {
         position: absolute;
-        left: 0;
+        left: 20%;
         bottom: 40%;
-        width: 100%;
+        width: 60%;
         font-family: "Comic Sans MS";
         font-weight: bold;
         text-align: center;
@@ -267,27 +303,42 @@
   <body>
     <div id="bg" onclick="showEl('p2');">
       <img id="family" src="family.jpg"/>
+      <div id="colorChange">
+        <input type="color" id="bg_color" pattern="#[a-f0-9]{6}" name="color-input"/>
+        <span id="button_span">
+          <input type="button" value="Cancel" onClick="noChange();">
+          <input type="button" value="Change" onClick="changeIt();">
+        </span>
+        <p>Do you want to keep the change?</p>
+      </div>
       <div id="players">
         <span id="stations">
           <table>
             <tr>
               <td>
-                <a class="station" href="http://yomiradio.com/ht/" target="_blank"
-                  onmouseover="fadeEl('mlp-ts',1);"
+                <a class="station"
+                  href="http://yomiradio.com/ht/" target="_blank"
+                  onmouseover="fadeEl('mlp-ts',1);hideEl('div1');
+                    hideEl('p2');"
                   onmouseout="fadeEl('mlp-ts',0);">
                   Yesterday Once More
                 </a>
               </td>
               <td>
-                <a class="station" href="http://www.bandwagonradio.com/ht/" target="_blank"
-                  onmouseover="fadeEl('mlp-green',1);"
+                <a class="station"
+                  href="http://www.bandwagonradio.com/ht/"
+                    target="_blank"
+                  onmouseover="fadeEl('mlp-green',1);hideEl('div1');
+                    hideEl('p2');"
                   onmouseout="fadeEl('mlp-green',0);">
                   Bandwagon Radio
                 </a>
               </td>
               <td>
-                <a class="station" href="http://grandlakeradionetwork.com/" target="_blank"
-                  onmouseover="fadeEl('mlp-rd',1);"
+                <a class="station"
+                  href="http://grandlakeradionetwork.com/"
+                    target="_blank"
+                  onmouseover="fadeEl('mlp-rd',1);hideEl('p2');"
                   onmouseout="fadeEl('mlp-rd',0);">
                   Grand Lakes Radio
                 </a>
@@ -300,7 +351,7 @@
                     onclick="toggleSrc('yom');"/>
                   <img id="stop_yom" class="stop btn" src="Stop.png"
                     onclick="toggleSrc('yom');"/>
-                  <audio id="yom" controls src="">Yesterday Once More</audio>
+                  <audio id="yom" controls src=""/>
                 </div>
               </td>
               <td>
@@ -309,7 +360,7 @@
                     onclick="toggleSrc('bwr');"/>
                   <img id="stop_bwr" class="stop btn" src="Stop.png"
                     onclick="toggleSrc('bwr');"/>
-                  <audio id="bwr" controls src="">Bandwagon Radio</audio>
+                  <audio id="bwr" controls src=""/>
                 </div>
               </td>
               <td>
@@ -318,7 +369,7 @@
                     onclick="toggleSrc('glr');"/>
                   <img id="stop_glr" class="stop btn" src="Stop.png"
                     onclick="toggleSrc('glr');"/>
-                  <audio id="glr" controls src="">Grand Lakes Radio, Tulsa</audio>
+                  <audio id="glr" controls src=""/>
                 </div>
               </td>
             </tr>
@@ -328,17 +379,17 @@
     </div>
     <div id="div1">
       <p id="magenta">
-        <span onclick="setBG('#00CCFF');"><strike>Magenta</strike></span>
+        <span onclick="setBG('#ff00ff');"><u><i>Fuchsia</i></u></span>
         <br/>
-        <span onclick="setBG('#FF00FF');"><u><i>Fuchsia</i></u></span>
+        <span onclick="showEl('bg_color');">
+          <strike>Magenta</strike>?</span>
         <span onclick="hideEl('div1');">for</span>
         <span id="Toni"
           onmouseover="toggleBtns('yom');toggleBtns('bwr');
             toggleBtns('glr');showEl('players');"
           onclick="setZ('luv',5);setBG('#842A84');showEl('g-heart');
             hideEl('div1');fadeEl('luv',1);"/>
-          Toni
-        </span>
+        Toni</span>
         <span id="heart">
           <img id="my-heart" src="my-heart.png"
             onclick="showEl('family');"
@@ -347,90 +398,128 @@
         </span>
       </p>
     </div>
+    <a id="oops"
+      onmouseover="showEl('p2')"
+      onclick="location.reload();">
+      Oops!
+    </a>
     <div id="div2">
       <p id="p2">
         <span onclick="hideEl('family');">Have</span>
         <span onclick="hideEl('p2');"> a </span>
-        <span onclick="showEl('lol');">LOVELY</span>
+        <span onclick="showEl('lol');">WONDERFUL</span>
         <span onclick="showEl('div1');">day!!!</span>
       </p>
       <img id="lol" src="lol_image.gif"
         onclick="hideEl('lol');hideEl('players');
           hideEl('play_yom');hideEl('play_bwr');hideEl('play_glr');
           hideEl('stop_yom');hideEl('stop_bwr');hideEl('stop_glr');"/>
-      <a id="oops"
-        onmouseover="showEl('p2')"
-        onclick="location.reload();">
-        Oops!
-      </a>
-
-<!--    <a href="#" id="play_stop" onclick="if (document.getElementById('yom').paused){document.querySelector('#yom').setAttribute('src','http://yom.purestream.net:6072/;');document.getElementById('yom').play();document.getElementById('play_stop').innerHTML='Stop';}else{document.querySelector('#yom').setAttribute('src','');document.getElementById('play_stop').innerHTML='Play';};" style="position:absolute;top:50%;left:10%;">Play</a> -->
-<!-- (document.body.style.backgroundColor) -->
-<!-- <input type="color" id="v_color" value="document.body.style.backgroundColor.value;"> -->
-<!-- <input onmouseover="document.getElementById('play_stop').innerHTML=(document.body.style.backgroundColor);" type="color" id="bg_color" title="Background Color" pattern="#[a-f0-9]{6}" name="color-input" value=(document.body.style.backgroundColor)/> -->
-<!-- <a href="#" id="set_bg_color" onclick="document.body.style.backgroundColor='#FFFF00';" style="position:absolute;top:80%;left:10%;">Set BG Color</a> -->
-<!-- <a href="#" onmouseover="alert(document.body.style.backgroundColor);" style="position:absolute;top:80%;left:10%;">Set BG Color</a> -->
-
-<!--
-  <p onmouseover="document.getElementById('mood').innerHTML=(document.getElementById('yom').duration);" id="mood"><b><br/>Play</b></p>
-  <input name="color-input" id="color-field" type="color" value="#00CCFF" title="Color picker"/>
--->
-
     </div>
-    <p id="luv"
-      onclick="setZ('luv',-1);fadeEl('luv',0);hideEl('g-heart');showEl('div1');">
+    <p id="luv" onclick="setZ('luv',-1);fadeEl('luv',0);
+      hideEl('g-heart');showEl('div1');">
       I LOVE YOU!
     </p>
     <img id="easter_egg" src="Rabbit.png"/>
-    <img id="mlp-ts" src="twilight_sparkle.gif"/>
     <img id="mlp-green" src="greeny.gif"/>
+    <img id="mlp-ts" src="twilight_sparkle.gif"/>
     <img id="mlp-rd" src="Rainbow_Dash.gif"/>
-    <img id="g-heart" src="g-heart.gif"
-      onclick="setZ('luv',-1);fadeEl('luv',0);hideEl('g-heart');showEl('div1');"/>
-
+    <img id="g-heart" src="g-heart.gif"/>
 
 <!-- ====================================================== -->
     <script>
+      var currentBgColor
       var srcyom="http://yom.purestream.net:6072/;";
       var srcbwr="http://radio.purestream.net:7072/;";
       var srcglr="http://205.164.41.50:1976/;";
-      document.getElementById('yom').volume=0.1;
-      document.getElementById('bwr').volume=0.1;
-      document.getElementById('glr').volume=0.1;
-      
+      function gEID(id){return document.getElementById(id);}
       function showEl (element) {
-      		document.getElementById(element).style.visibility="visible";
-      		};
+      	gEID(element).style.visibility="visible";
+      }
       function hideEl (element) {
-      		document.getElementById(element).style.visibility="hidden";
-      		};
+      	gEID(element).style.visibility="hidden";
+      }
       function fadeEl (element,val) {
-      		document.getElementById(element).style.opacity=val;
-      		};
+      	gEID(element).style.opacity=val;
+      }
       function setZ (element,val) {
-      		document.getElementById(element).style.zIndex=val;
-      		};
+      	gEID(element).style.zIndex=val;
+      }
+      function getBG () {
+        window.currentBgColor=rgb2hex(window.getComputedStyle(document.body,null).backgroundColor);
+        gEID("bg_color").value=window.currentBgColor;
+        return window.currentBgColor;
+      }
+      function testColor (cVal) {
+      	document.body.style.backgroundColor=cVal.target.value;
+      }
+      function lastChance () {
+          gEID("bg_color").value=window.currentBgColor;
+          showEl("colorChange");
+      }
+      function changeIt () {
+          hideEl("colorChange");
+          hideEl("bg_color");
+          getBG();
+      }
+      function noChange () {
+          hideEl("colorChange");
+          hideEl("bg_color");
+          document.body.style.backgroundColor=window.currentBgColor;
+          getBG();
+      }
       function setBG (cVal) {
-      		document.body.style.backgroundColor=cVal;
-      		};
+        if (Object.prototype.toString.call(cVal) === '[object String]' &&
+          cVal.match(/^#[0-9a-f]{6}$/)) {
+            document.body.style.backgroundColor=cVal;
+            gEID("bg_color").value=getBG();
+          }else{
+            document.body.style.backgroundColor=cVal.target.value;
+          }
+          hideEl("colorChange");
+          hideEl("bg_color");
+      }
       function toggleBtns (station) {
-      		if (document.getElementById(station).paused){
-      		  showEl("play_"+station);
-      		  hideEl("stop_"+station);
-      		}else{
-      		  showEl("stop_"+station);
-      		  hideEl("play_"+station);
-      		};};
+      	if (gEID(station).paused){
+      	  showEl("play_"+station);
+      	  hideEl("stop_"+station);
+      	}else{
+      	  showEl("stop_"+station);
+      	  hideEl("play_"+station);
+      	}
+      }
       function toggleSrc (station) {
-      		src="src"+station;
-      		if (document.getElementById(station).paused){
-      		  document.getElementById(station).setAttribute("src",window[src]);
-      		  document.getElementById(station).play();
-      		  toggleBtns(station);
-      		}else{
-      		  document.getElementById(station).setAttribute("src","");
-      		  toggleBtns(station);
-      		};};
+      	src="src"+station;
+      	El=gEID(station);
+      	if (El.paused){
+      	  El.setAttribute("src",window[src]);
+      	  El.play();
+      	  toggleBtns(station);
+      	}else{
+      	  El.setAttribute("src","");
+      	  toggleBtns(station);
+      	}
+      }
+      function rgb2hex(rgb) {
+        if (rgb.search("rgb")==-1) {
+//          return rgb;
+          alert("The rgb2hex function cannot convert this value: rgb="+rgb);
+        }else{
+          rgb=rgb.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+))?\)$/);
+          function hex(x) {
+            return ("0"+parseInt(x).toString(16)).slice(-2);
+          }
+          return "#"+hex(rgb[1])+hex(rgb[2])+hex(rgb[3]);
+        }
+      }
+
+<!-- ====================================================== -->
+// PAGE INITIALIZATIONS (~onload):
+      gEID("yom").volume=0.1;
+      gEID("bwr").volume=0.1;
+      gEID("glr").volume=0.1;
+      gEID("bg_color").value=getBG();
+      gEID("bg_color").addEventListener("input", testColor, false);
+      gEID("bg_color").addEventListener("change", lastChance, false);
     </script>
   </body>
 </html>
