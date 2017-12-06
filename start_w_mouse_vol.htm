@@ -616,18 +616,18 @@
           };
         };
       };
-rdo.addEventListener('loadeddata', function() {
-  if(rdo.readyState>2 && (!rdo.paused)) {
-    if (stnList.indexOf(currentStation)>1){
-      gEID("stereo").style.opacity=0.9;
-    };
-    rdoEffects.loop=false;
-    rdoEffects.setAttribute("src","");
-  }else if(rdo.on){
-    gEID("stereo").style.opacity=0;
-    playStatic();
-  };
-});
+//rdo.addEventListener('loadeddata', function() {
+//  if(rdo.readyState>2 && (!rdo.paused)) {
+//    if (stnList.indexOf(currentStation)>1){
+//      gEID("stereo").style.opacity=0.9;
+//    };
+//    rdoEffects.loop=false;
+//    rdoEffects.setAttribute("src","");
+//  }else if(rdo.on){
+//    gEID("stereo").style.opacity=0;
+//    playStatic();
+//  };
+//});
       function playStatic(){
         rdoEffects.setAttribute("src","rdoSTATIC.ogg");
         rdoEffects.loop=true;
