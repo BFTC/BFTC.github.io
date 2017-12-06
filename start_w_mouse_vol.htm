@@ -1,0 +1,929 @@
+			<!DOCTYPE HTML>
+
+<html>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta http-equiv="Content-Language" content="en-US">
+    
+    <title>It's a start...</title>
+     <style type="text/css">
+      * {
+        font-family: Verdana, Helvetica;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #16c9c9;
+        overflow: hidden;
+      }
+      p {
+        width: 60%;
+        margin: 0 auto;
+        font-weight: bold;
+        color: #fff;
+        font-size: 170%;
+        line-height: 1.4;
+      }
+      #colorChange {
+        position: absolute;
+        top: 2%;
+        left: 1%;
+        visibility: hidden;
+      }
+      #button_span {
+        position: relative;
+        top: 30px;
+        left: -60px;
+        width: 150%;
+        margin: auto;
+      }
+      #colorChange input {
+        width: 60px;
+        padding: 1px;
+        margin: auto;
+        cursor: pointer;
+      }
+      #colorChange p {
+        position: relative;
+        top: 35px;
+        left: -25px;
+        width: 100px;
+        padding: 2% 3%;
+        font-weight: lighter;
+        font-size: 60%;
+        color: #000;
+        background-color: #ddd;
+        border: 1px solid #999;
+      }
+      #colorBtn {
+        position: relative;
+        top: 0;
+        left: 40px;
+        margin: auto;
+      }
+      #line1 {
+        position: relative;
+        bottom: 0;
+        padding: 0;
+        font-size: 170%;
+        line-height: 1.4;
+      }
+      #ssContainer {
+        position: absolute;
+        display: none;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0);
+        transition: 5s linear;
+        visibility: visible;
+        cursor: none !important;
+      }
+      #Slides {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+      }
+      .slide {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        margin: 0;
+        margin-right: -50%;
+        max-width: 75%;
+        max-height: 75%;
+        visibility: visible;
+        border-radius: 50px;
+        opacity: 0;
+        transition: 8s ease-in-out;
+        transform: translate(-50%,-50%);
+      }
+      #rdoDivAbs {
+        position: absolute;
+        bottom: 7px;
+        width: 100%;
+        height: 240px;
+      }
+      #rdoDivRel {
+        display: block;
+        position: relative;
+        width: 840px;
+        height: 100%;
+        margin: 0 auto;
+        background-image:  url("Becker1.png");
+        background-size: 100%;
+        visibility: visible;
+      }
+      #rdoDivBanner {
+        position: relative;
+        overflow: hidden;
+        width: 98.8%;
+        height: 24.3%;
+        background-color: #ddd;
+        border: 2px solid #555;
+        border-radius: 8px;
+        opacity: 0;
+        transition: 1s;
+      }
+      #banner {
+        position: absolute;
+        top: 8px;
+        height: 100%;
+        font-weight: lighter;
+        font-size: 30pt;
+        line-height: 100%;
+        white-space: nowrap;
+        text-decoration: none !important;
+        color: #000;
+      }
+      .scroll {
+        width: auto;
+        animation: banner 420s linear infinite;
+      }
+      @keyframes banner {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      #rdoDivPlyr {
+        position: relative;
+        height: 57.5%;
+        width: 91.1%;
+        margin: 0 auto;
+      }
+      .rdoKnobs {
+        position: absolute;
+        top: 5px;
+        left: 2px;
+        height: 135px;
+        width: 135px;
+        background-color: rgba(32,32,32,0.0);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      #rdoKnobVol {
+        transform: rotate(40deg);
+      }
+      #rdoVolMrk {
+        position: absolute;
+        top: 122px;
+        left: 68px;
+        width: 3px;
+        height: 12px;
+        background-color: #ccc;
+      }
+      #pwr {
+        position: absolute;
+        top: 41%;
+        left: 44%;
+        width: 6%;
+        height: 10%;
+        background-color: rgb(30,255,30);
+        box-shadow: 0 0 8px 6px rgb(30,255,30);
+        border: 1px solid rgb(30,255,30);
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+        opacity: 0;
+        transition: 0.3s ease-in;
+        visibility: visible;
+      }
+      #stereo {
+        position: absolute;
+        top: 41%;
+        left: 56.2%;
+        width: 6%;
+        height: 10%;
+        background-color: rgb(255,20,20);
+        box-shadow: 0 0 8px 6px rgb(255,20,20);
+        border: 1px solid rgb(255,20,20);
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+        opacity: 0;
+        transition: 0.3s ease-in;
+        visibility: visible;
+      }
+      #rdoKnobTune {
+        top: 0px;
+        left: 629px;
+        cursor: default;
+      }
+      #stnHP {
+        position: absolute;
+        left: 0;
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+        visibility: hidden;
+        cursor: pointer;
+      }
+      #rdoDivHist {
+        position: relative;
+        left: 22.4%;
+        width: 55%;
+        height: 65%;
+        background-color: #ddd;
+        border: 2px solid #555;
+        border-radius: 8px;
+        opacity: 0;
+        transition: 1s;
+        visibility: hidden;
+        cursor: pointer;
+      }
+      #rdoDivHist p{
+        width: 100%;
+        padding: 6px 0 0;
+        font-weight: lighter;
+        font-size: 28pt;
+        line-height: 90%;
+        color: #000;
+      }
+      #rdoDivStnBtns {
+        position: relative;
+        top: -12%;
+        left: 25%;
+        height: 23%;
+        width: 51%;
+      }
+      .rdoStnBtns {
+        position: absolute;
+        top: 10%;
+        width: 14%;
+        height: 75%;
+        background-color: rgba(16,16,16,0.5);
+        opacity: 0;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+      #rdoDivStnBtn0 {
+        left: 1.5%;
+      }
+      #rdoDivStnBtn1 {
+        left: 18%;
+      }
+      #rdoDivStnBtn2 {
+        left: 35%;
+      }
+      #rdoDivStnBtn3 {
+        left: 52%;
+      }
+      #rdoDivStnBtn4 {
+        left: 68.5%;
+      }
+      #rdoDivStnBtn5 {
+        left: 84.5%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="colorChange">
+      <input type="color" id="colorBtn" pattern="#[a-f0-9]{6}"/>
+      <span id="button_span">
+        <input type="button" value="Cancel" onClick="noChange();">
+        <input type="button" value="Change" onClick="changeIt();">
+      </span>
+      <p>Do you want to keep the change?</p>
+    </div>
+<!-- ------- START PLAYER ------- -->
+    <div id="rdoDivAbs">
+      <div id="rdoDivRel">
+        <div id="rdoDivBanner">
+          <p id="banner"></p>
+        </div>
+        <div id="rdoDivPlyr">
+          <div id="rdoKnobVol" class="rdoKnobs">
+            <div id="rdoVolMrk"></div>
+          </div>
+          <div id="pwr"></div>
+          <div id="stereo"></div>
+          <div id="rdoDivHist" onclick="openPlayHistory();"
+            onmouseover="rdoPnlDisplay(true);"
+            onmouseout="rdoPnlDisplay(false);">
+            <p id="stationName">Yesterday Once More</p>
+            <p id="listenTime">Playing: 00:00:00</p>
+          </div>
+          <div id="rdoKnobTune" class="rdoKnobs">
+            <a id="stnHP"></a>
+          </div>
+          <audio id="radio" src=""/>
+          <audio id="pgEffects" src=""/>
+        </div>
+        <div id="rdoDivStnBtns">
+          <div id="rdoDivStnBtn0" class="rdoStnBtns"
+            onclick="stnInfo(0);">
+          </div>
+          <div id="rdoDivStnBtn1" class="rdoStnBtns"
+            onclick="stnInfo(1);">
+          </div>
+          <div id="rdoDivStnBtn2" class="rdoStnBtns"
+            onclick="stnInfo(2);">
+          </div>
+          <div id="rdoDivStnBtn3" class="rdoStnBtns"
+            onclick="stnInfo(3);">
+          </div>
+          <div id="rdoDivStnBtn4" class="rdoStnBtns"
+            onclick="stnInfo(4);">
+          </div>
+          <div id="rdoDivStnBtn5" class="rdoStnBtns"
+            onclick="stnInfo(5);">
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ------- END PLAYER ------- -->
+    <p id="line1">What
+      <span onclick="showEl('colorBtn');" style="cursor:pointer;">
+        <u>color</u>
+      </span>
+      do you want today?
+    </p>
+    <div id="ssContainer" onclick="stopSlideShow();">
+      <div id="Slides">
+        <img id="slideA" class="slide" src="quotes/wdy_quotes_0000.jpg"/>
+        <img id="slideB" class="slide" src="quotes/wdy_quotes_0000.jpg"/>
+      </div>
+    </div>
+<!-- ====================================================== -->
+    <script>
+      var stnList=["glr","npr","yom","bwr","yomhd","bwrhd"];
+      var currentBgColor;
+      var currentStation="glr";
+      var glrSrc="http://205.164.41.50:1976/;";
+//      var nprSrc="http://173.193.138.136:7310/;";
+      var nprSrc="http://38.66.26.20:8000/;";
+      var yomSrc="http://yom.purestream.net:6072/;";
+      var bwrSrc="http://radio.purestream.net:7072/;";
+      var yomhdSrc="http://yom.purestream.net:6070/;";
+      var bwrhdSrc="http://radio.purestream.net:7070/;";
+      var glrHP="http://grandlakeradionetwork.com/";
+      var nprHP="http://kgou.org/";
+      var yomHP="http://yomiradio.com/ht/";
+      var bwrHP="http://www.bandwagonradio.com/ht/";
+      var yomhdHP="http://yomiradio.com/ht/";
+      var bwrhdHP="http://www.bandwagonradio.com/ht/";
+      var glrPL=true;
+      var nprPL=false;
+      var yomPL=true;
+      var bwrPL=true;
+      var yomhdPL=true;
+      var bwrhdPL=true;
+      var tR="";
+      var rdo=gEID("radio");
+      var rdoEffects=gEID("pgEffects");
+      var nowplayingUpdater="";
+      var lastPlayed="";
+      var lT=gEID("listenTime");
+      var updatePlayTime="";
+      var UpdateTime=63;
+      var ssTimer=300;
+      var slideInterval=3;
+      var ssTimeout=-1;
+      var contnr=gEID("ssContainer");
+      var sldA=gEID("slideA");
+      var sldB=gEID("slideB");
+      var lpMinT=8000;
+      var lpPlusT=20000;
+      var lpT=0;
+      var looperA="";
+      var looperB="";
+      function gEID(id){return document.getElementById(id);};
+      function showEl (element) {
+      	gEID(element).style.visibility="visible";
+      };
+      function hideEl (element) {
+      	gEID(element).style.visibility="hidden";
+      };
+      function fadeEl (element,val) {
+      	gEID(element).style.opacity=val;
+      };
+      function setZ (element,val) {
+      	gEID(element).style.zIndex=val;
+      };
+      function rgb2hex(rgb) {
+        if (rgb.search("rgb")==-1) {
+          alert("The rgb2hex function cannot convert this value: rgb="+rgb);
+        }else{
+          var rgb=rgb.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+))?\)$/);
+          function hex(x) {
+            return ("0"+parseInt(x).toString(16)).slice(-2);
+          };
+          return "#"+hex(rgb[1])+hex(rgb[2])+hex(rgb[3]);
+        };
+      };
+      function hex2rgb(hex){
+        var r,g,b;
+        if (hex.length===4){
+          r=parseInt(hex.slice(1,2)+hex.slice(1,2),16);
+          g=parseInt(hex.slice(2,3)+hex.slice(2,3),16);
+          b=parseInt(hex.slice(3,4)+hex.slice(3,4),16);
+        }else{
+          r=parseInt(hex.slice(1,3),16);
+          g=parseInt(hex.slice(3,5),16);
+          b=parseInt(hex.slice(5,7),16);
+        };
+        return "rgb("+r+", "+g+", "+b+")";
+      };
+      function line1Color(newColor){
+        var el=gEID("line1");
+        var newRGB=hex2rgb(newColor).slice(4,-1).split(",").map(Number);
+        var newLum=(newRGB[0]+newRGB[1]+newRGB[2])/765;
+        if (newLum>0.5){el.style.color="#000";}else{el.style.color="#fff";};
+      };
+      function getBG () {
+        window.currentBgColor=rgb2hex(window.getComputedStyle(document.body,null).backgroundColor);
+        gEID("colorBtn").value=window.currentBgColor;
+        return window.currentBgColor;
+      };
+      function testColor (cVal) {
+        document.body.style.backgroundColor=cVal.target.value;
+        line1Color(cVal.target.value);
+      };
+      function lastChance () {
+        gEID("colorBtn").value=window.currentBgColor;
+        showEl("colorChange");
+      };
+      function changeIt () {
+        hideEl("colorChange");
+        hideEl("colorBtn");
+        getBG();
+      };
+      function noChange () {
+        hideEl("colorChange");
+        hideEl("colorBtn");
+        document.body.style.backgroundColor=window.currentBgColor;
+        getBG();
+        line1Color(currentBgColor);
+      };
+      function setBG (cVal) {
+        if (cVal.match(/^#[0-9a-f]{6}$/)) {
+          document.body.style.backgroundColor=cVal;
+          gEID("colorBtn").value=getBG();
+        }else{
+          document.body.style.backgroundColor=cVal.target.value;
+        };
+        hideEl("colorBtn");
+      };
+      function toggleBtns () {
+        var hpLink=gEID("stnHP");
+        if (!rdo.on){
+          hideEl("rdoDivHist");
+          hpLink.style.visibility="hidden";
+          hpLink.href="";
+          hpLink.target="";
+        }else{
+          showEl("rdoDivHist");
+          hpLink.target="_blank";
+          hpLink.href=window[currentStation+"HP"];
+          hpLink.style.visibility="visible";
+        };
+      };
+      function hms () {
+        t=Math.round(rdo.currentTime);
+        var mins=60;
+        var hrs=mins*60;
+        var h=Math.floor(t/hrs);
+        t=t-(h*hrs);
+        var m=Math.floor(t/mins);
+        t=t-(m*mins);
+        lT.innerHTML="Playing: "+pad(h,2)+":"+pad(m,2)+":"+pad(t,2);
+      };
+      function playTime () {
+        updatePlayTime=setInterval(hms,1000);
+      };
+      function rdoPnlDisplay(display){
+        if (display){
+          fadeEl("rdoDivHist",1);
+          if (window[currentStation+"PL"]){
+            fadeEl("rdoDivBanner",1);
+          };
+        }else{
+          fadeEl("rdoDivHist",0);
+          fadeEl("rdoDivBanner",0);
+        };
+      };
+      function pushBtns (n) {
+        var elList=document.getElementsByClassName("rdoStnBtns");
+        var el=gEID("rdoDivStnBtn"+n);
+        for (var i = 0; i < elList.length; i++) {
+          elList[i].style.opacity=0;
+          elList[i].style.cursor="pointer";
+        };
+        el.style.opacity=1;
+        el.style.cursor="default";
+      };
+      function stnInfo (stnIdx) {
+        gEID("stereo").style.opacity=0;
+        switch (stnIdx) {
+          case 0:
+            gEID("stationName").innerHTML="Grand Lake Radio";
+            pushBtns("0");
+            currentStation=stnList[0];
+            setTimeout(toggleSrc,400,currentStation,false);
+            break;
+          case 1:
+            gEID("stationName").innerHTML="National Public Radio";
+            pushBtns(1);
+            currentStation=stnList[1];
+            setTimeout(toggleSrc,400,currentStation,false);
+            break;
+          case 2:
+            gEID("stationName").innerHTML="Yesterday Once More";
+            pushBtns(2);
+            currentStation=stnList[2];
+            setTimeout(toggleSrc,400,currentStation,false);
+            break;
+          case 3:
+            gEID("stationName").innerHTML="Bandwagon Radio";
+            pushBtns(3);
+            currentStation=stnList[3];
+            setTimeout(toggleSrc,400,currentStation,false);
+            break;
+          case 4:
+            gEID("stationName").innerHTML="Y O M &mdash; HD";
+            pushBtns(4);
+            currentStation=stnList[4];
+            setTimeout(toggleSrc,400,currentStation,false);
+            break;
+          case 5:
+            gEID("stationName").innerHTML="B W R &mdash; HD";
+            pushBtns(5);
+            currentStation=stnList[5];
+            setTimeout(toggleSrc,400,currentStation,false);
+        };
+      };
+      function toggleSrc (station,forcePlay) {
+        var newSrc=window[station+"Src"];
+        document.title="It's a start...";
+        clearInterval(nowplayingUpdater);
+        clearInterval(updatePlayTime);
+        lT.innerHTML="Playing: 00:00:00"
+        lastPlayed="";
+        if (station === "") {
+          rdoPnlDisplay(false);
+          rdo.setAttribute("src","");
+        }else{
+          tR="";
+          if (rdo.on || forcePlay){
+            playStatic();
+            rdo.setAttribute("src",newSrc);
+            rdo.play();
+            NowPlaying();
+            window.nowplayingUpdater=setInterval(NowPlaying,window.UpdateTime*1000);
+            playTime();
+          };
+        };
+        toggleBtns();
+      };
+      function onOff (newVol) {
+        if (newVol<0 && rdo.on) {
+          rdo.on=false;
+          rdo.volume=0;
+          rdoEffects.clicked=false;
+          rdoEffects.volume=0.25;
+          rdoEffects.loop=false;
+          rdoEffects.setAttribute("src","rdoOFF.ogg");
+          rdoEffects.play();
+          rdoEffects.onended=function() {
+            gEID("pwr").style.opacity=0;
+            gEID("stereo").style.opacity=0;
+            toggleSrc("",false);
+          };
+        }else if (newVol>=0 && !rdo.on){
+          rdo.on=true;
+          rdo.volume=newVol;
+          rdoEffects.loop=false;
+          rdoEffects.setAttribute("src","rdoON.ogg");
+          rdoEffects.volume=0.25;
+          rdoEffects.play();
+          rdoEffects.onended=function(){
+            rdoEffects.clicked=true;
+            gEID("pwr").style.opacity=0.8;
+            playStatic();
+            toggleSrc(window.currentStation,true);
+            rdoEffects.volume=rdo.volume;
+          };
+        };
+      };
+rdo.addEventListener('loadeddata', function() {
+  if(rdo.readyState>2 && (!rdo.paused)) {
+    if (stnList.indexOf(currentStation)>1){
+      gEID("stereo").style.opacity=0.9;
+    };
+    rdoEffects.loop=false;
+    rdoEffects.setAttribute("src","");
+  }else if(rdo.on){
+    gEID("stereo").style.opacity=0;
+    playStatic();
+  };
+});
+      function playStatic(){
+        rdoEffects.setAttribute("src","rdoSTATIC.ogg");
+        rdoEffects.loop=true;
+        rdoEffects.play();
+      };
+      function changeVol (newVol) {
+        rdo.volume=newVol;
+        if (rdo.on && rdoEffects.clicked){
+          rdoEffects.volume=newVol;
+        };
+      };
+      function gCen (el) {
+        var rect = el.getBoundingClientRect();
+        var elX=rect.left+((rect.right-rect.left)/2);
+        var elY=rect.top+((rect.bottom-rect.top)/2);
+        return [elX,elY];
+      }
+      function gAng (el,pt) {
+        var elCen=gCen(el);
+        var angD=((Math.atan2(pt[1]-elCen[1],pt[0]-elCen[0])*180/Math.PI)-90);
+        if (angD>360) {
+          angD=angD-360;
+        };
+        if (angD<0) {
+          angD=360+angD;
+        };
+        if (angD<55 && angD>=0) {
+          angD=40;
+        };
+        if (angD>=55 && angD<=70) {
+          angD=70;
+        };
+        if (angD>320 && angD<=360) {
+          angD=320;
+        };
+        return angD;
+      };
+      function sAngP (x,y) {
+        var el=gEID("rdoKnobVol");
+        var pt=[x,y];
+        var volTmp=0;
+        angRot=gAng(el,pt);
+        if (!rdo.on && angRot<=55){
+          return;
+        }else if (!rdo.on && angRot>55){
+          el.style.transform="rotate(70deg)";
+          onOff(volTmp);
+          return;
+        };
+        if (angRot >= 70) {
+          volTmp=(Math.round((angRot-70)/2.5))/100;
+          angRot=(volTmp*250)+70;
+          if (rdo.on){
+            changeVol(volTmp);
+          }else{
+            onOff(volTmp);
+          };
+          el.style.transform="rotate("+angRot+"deg)";
+        }else{
+          if (rdo.on){
+            onOff(-1);
+            el.style.transform="rotate(40deg)";
+          };
+        };
+      };
+      function sAngD (deg) {
+        var volTmp=0;
+        var el=gEID("rdoKnobVol");
+        var angRot=(rdo.volume*250)+70;
+        if (!rdo.on && deg<0){
+          return;
+        }else if (!rdo.on && deg>0){
+          el.style.transform="rotate(70deg)";
+          onOff(volTmp);
+          return;
+        };
+        if ((angRot+deg>=70) && (angRot+deg<=320)){
+          volTmp=(Math.round(((angRot-70)+deg)/2.5))/100;
+          angRot=(volTmp*250)+70;
+          changeVol(volTmp);
+          el.style.transform="rotate("+angRot+"deg)";
+        }else if (angRot+deg<70){
+          onOff(-1);
+          el.style.transform="rotate(40deg)";
+        };
+      };
+      function changeClass(element,className,state){
+        if (state){
+          if (element.classList.contains(className)){
+            element.classList.remove(className);
+            void element.offsetWidth;
+            element.classList.add(className);
+          }else{
+            element.classList.add(className);
+          };
+        }else{
+          if (element.classList.contains(className)){
+            element.classList.remove(className);
+          }else{
+            element.classList.add(className);
+            void element.offsetWidth;
+            element.classList.remove(className);
+          };
+        };
+      };
+      function getPL(method, url){
+        var xhr=new XMLHttpRequest();
+        xhr.open(method,url,true);
+        return xhr;
+      };
+      function NowPlaying(){
+        if (window[window.currentStation+"PL"]){
+          var request=getPL("get","https://cors-anywhere.herokuapp.com/"+((window[window.currentStation+"Src"]).slice(0,-1))+"played.html");
+        };
+        if (request){
+          request.onload=function(){
+            window.tR=request.responseText;
+            var bannerText="&nbsp;&nbsp;&mdash;&nbsp;&nbsp;";
+            startPos=(window.tR.search(/Song Title<\/b><\/td>/)+49);
+            endPos=(window.tR.search(/<td><b>Current Song/));
+            var playingNow=window.tR.slice(startPos,endPos);
+            if (playingNow && (playingNow!==lastPlayed)){
+              document.title=playingNow;
+              lastPlayed=playingNow;
+              var titleL=playingNow.length;
+              var bannerEl=gEID("banner");
+              if (titleL>35){
+                changeClass(bannerEl,"scroll",true);
+                bannerEl.style.width="auto";
+                bannerText=playingNow+bannerText;
+                if (titleL<50) {
+                  bannerEl.innerHTML=bannerText.repeat(50);
+                }else if (titleL<60) {
+                  bannerEl.innerHTML=bannerText.repeat(40);
+                }else{
+                  bannerEl.innerHTML=bannerText.repeat(32);
+                };
+              }else{
+                changeClass(bannerEl,"scroll",false);
+                bannerEl.style.width="100%";
+                bannerEl.innerHTML=playingNow;
+              };
+            };
+          };
+          request.send();
+        }else{
+          clearInterval(window.nowplayingUpdater);
+          gEID("banner").innerHTML="";
+        };
+      };
+      function openPlayHistory () {
+        var PlayHistoryWin=window.open("",window.currentStation);
+        PlayHistoryWin.document.write(window.tR);     
+      };
+      function slideBGColor () {
+        var r=Math.round(Math.random()*255);
+        var g=Math.round(Math.random()*255);
+        var b=Math.round(Math.random()*255);
+        return "rgb("+r+","+g+","+b+")";
+      };
+      function slidePos () {
+        var x=Math.round(Math.random()*130)-115;
+        var y=Math.round(Math.random()*30)-65;
+        return "translate("+x+"%,"+y+"%)";
+      };
+      function pad(n,z){
+        return (String(0).repeat(z)+String(n)).slice(String(n).length);
+      };
+      function initSlideShow () {
+        if (ssTimer > 10) {
+          contnr.style.display="block";
+          contnr.style.backgroundColor=getBG();
+          slideShow();
+        };
+      };
+      function clearSS () {
+        clearTimeout(ssTimeout);
+        clearTimeout(looperA);
+        clearTimeout(looperB);
+      };
+      function stopSlideShow () {
+        clearSS();
+        fadeEl("slideA",0);
+        fadeEl("slideB",0);
+        if(document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        };
+        contnr.style.display='none';
+      };
+      function slideShow () {
+        var opacityA=window.getComputedStyle(sldA).getPropertyValue("opacity")
+        var ssIndex=Math.round(Math.random()*114);
+        if (opacityA != 1) {
+          sldB.style.opacity=0;
+          sldB.style.transform=slidePos();
+          clearTimeout(looperB);
+          sldA.src="quotes/wdy_quotes_"+(pad(ssIndex,4))+".jpg";
+          function loopA () {
+            sldA.style.transform=slidePos();
+            contnr.style.backgroundColor=slideBGColor();
+            lpT=Math.round(Math.random()*lpPlusT)+lpMinT;
+            looperA=setTimeout(loopA,lpT);
+          };
+          loopA();
+          sldA.style.opacity=1;
+        }else{
+          sldA.style.opacity=0;
+          sldA.style.transform=slidePos();
+          clearTimeout(looperA);
+          sldB.src="quotes/wdy_quotes_"+(pad(ssIndex,4))+".jpg";
+          function loopB () {
+            sldB.style.transform=slidePos();
+            contnr.style.backgroundColor=slideBGColor();
+            lpT=Math.round(Math.random()*lpPlusT)+lpMinT;
+            looperB=setTimeout(loopB,lpT);
+          };
+          loopB();
+          sldB.style.opacity=1;
+        };
+        window.ssTimeout=setTimeout(slideShow,slideInterval*60000);
+      };
+      var inactivityTime = function () {
+        var t;
+        document.onmousemove = resetTimer;
+        document.onmousedown = resetTimer; // touchscreen presses
+        document.onclick = resetTimer;     // touchpad clicks
+        document.onkeypress = resetTimer;
+        function resetTimer() {
+          clearTimeout(t);
+          stopSlideShow();
+          t = setTimeout(initSlideShow,ssTimer*1000);
+        };
+      };
+      function getPos(e) {
+        sAngP(e.pageX,e.pageY);
+      };
+      var draggyVol=gEID("rdoKnobVol");
+      draggyVol.addEventListener("mousedown",function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        getPos(e);
+        this.style.cursor="move";
+        document.body.style.cursor="move";
+        document.addEventListener("mousemove",getPos);
+        document.addEventListener("mouseup",function(e){
+          document.removeEventListener("mousemove",getPos);
+          document.removeEventListener("mouseup",getPos);
+          draggyVol.style.cursor="pointer";
+          document.body.style.cursor="default";
+        });
+      });
+      draggyVol.addEventListener("wheel",function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        sAngD((e.deltaY/53)*-2.5);
+      });
+      document.onkeydown=function(e){
+        var e=e;
+        switch (e.which) {
+          case 37:
+            var curStnIdx=stnList.indexOf(currentStation);
+            if (curStnIdx===0){
+              var stnIdx=5;
+            }else{
+              var stnIdx=curStnIdx-1;
+            };
+            stnInfo(stnIdx);
+            break;
+          case 38:
+            sAngD(2.5)
+            break;
+          case 39:
+            var curStnIdx=stnList.indexOf(currentStation);
+            if (curStnIdx<5){
+              var stnIdx=curStnIdx+1;
+            }else{
+              var stnIdx=0;
+            };
+            stnInfo(stnIdx);
+            break;
+          case 40:
+            sAngD(-2.5);
+            break;
+        };
+      };
+
+<!-- ====================================================== -->
+// PAGE INITIALIZATIONS (~onload):
+      rdo.volume=0;
+      rdo.on=false;
+      rdoEffects.volume=0;
+      gEID("colorBtn").value=getBG();
+      gEID("colorBtn").addEventListener("input", testColor, false);
+      gEID("colorBtn").addEventListener("change", lastChance, false);
+      stnInfo(0);
+      inactivityTime();
+    </script>
+  </body>
+</html>
